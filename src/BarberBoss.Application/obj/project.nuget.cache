@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "vqzOfs1akBA=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\wagne\\OneDrive\\Área de Trabalho\\WorkSpace\\BarberBoss\\src\\BarberBoss.Application\\BarberBoss.Application.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\wagne\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.1\\microsoft.extensions.dependencyinjection.abstractions.8.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}

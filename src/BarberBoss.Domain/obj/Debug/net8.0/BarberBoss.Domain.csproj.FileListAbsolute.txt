@@ -1,0 +1,11 @@
+C:\Users\wagne\OneDrive\Área de Trabalho\WorkSpace\BarberBoss\src\BarberBoss.Domain\bin\Debug\net8.0\BarberBoss.Domain.deps.json
+C:\Users\wagne\OneDrive\Área de Trabalho\WorkSpace\BarberBoss\src\BarberBoss.Domain\bin\Debug\net8.0\BarberBoss.Domain.dll
+C:\Users\wagne\OneDrive\Área de Trabalho\WorkSpace\BarberBoss\src\BarberBoss.Domain\bin\Debug\net8.0\BarberBoss.Domain.pdb
+C:\Users\wagne\OneDrive\Área de Trabalho\WorkSpace\BarberBoss\src\BarberBoss.Domain\obj\Debug\net8.0\BarberBoss.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\wagne\OneDrive\Área de Trabalho\WorkSpace\BarberBoss\src\BarberBoss.Domain\obj\Debug\net8.0\BarberBoss.Domain.AssemblyInfoInputs.cache
+C:\Users\wagne\OneDrive\Área de Trabalho\WorkSpace\BarberBoss\src\BarberBoss.Domain\obj\Debug\net8.0\BarberBoss.Domain.AssemblyInfo.cs
+C:\Users\wagne\OneDrive\Área de Trabalho\WorkSpace\BarberBoss\src\BarberBoss.Domain\obj\Debug\net8.0\BarberBoss.Domain.csproj.CoreCompileInputs.cache
+C:\Users\wagne\OneDrive\Área de Trabalho\WorkSpace\BarberBoss\src\BarberBoss.Domain\obj\Debug\net8.0\BarberBoss.Domain.dll
+C:\Users\wagne\OneDrive\Área de Trabalho\WorkSpace\BarberBoss\src\BarberBoss.Domain\obj\Debug\net8.0\refint\BarberBoss.Domain.dll
+C:\Users\wagne\OneDrive\Área de Trabalho\WorkSpace\BarberBoss\src\BarberBoss.Domain\obj\Debug\net8.0\BarberBoss.Domain.pdb
+C:\Users\wagne\OneDrive\Área de Trabalho\WorkSpace\BarberBoss\src\BarberBoss.Domain\obj\Debug\net8.0\ref\BarberBoss.Domain.dll

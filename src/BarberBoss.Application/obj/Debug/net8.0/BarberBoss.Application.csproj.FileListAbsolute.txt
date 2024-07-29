@@ -1,0 +1,17 @@
+C:\Users\wagne\OneDrive\Área de Trabalho\WorkSpace\BarberBoss\src\BarberBoss.Application\bin\Debug\net8.0\BarberBoss.Application.deps.json
+C:\Users\wagne\OneDrive\Área de Trabalho\WorkSpace\BarberBoss\src\BarberBoss.Application\bin\Debug\net8.0\BarberBoss.Application.dll
+C:\Users\wagne\OneDrive\Área de Trabalho\WorkSpace\BarberBoss\src\BarberBoss.Application\bin\Debug\net8.0\BarberBoss.Application.pdb
+C:\Users\wagne\OneDrive\Área de Trabalho\WorkSpace\BarberBoss\src\BarberBoss.Application\bin\Debug\net8.0\BarberBoss.Communication.dll
+C:\Users\wagne\OneDrive\Área de Trabalho\WorkSpace\BarberBoss\src\BarberBoss.Application\bin\Debug\net8.0\BarberBoss.Domain.dll
+C:\Users\wagne\OneDrive\Área de Trabalho\WorkSpace\BarberBoss\src\BarberBoss.Application\bin\Debug\net8.0\BarberBoss.Communication.pdb
+C:\Users\wagne\OneDrive\Área de Trabalho\WorkSpace\BarberBoss\src\BarberBoss.Application\bin\Debug\net8.0\BarberBoss.Domain.pdb
+C:\Users\wagne\OneDrive\Área de Trabalho\WorkSpace\BarberBoss\src\BarberBoss.Application\obj\Debug\net8.0\BarberBoss.Application.csproj.AssemblyReference.cache
+C:\Users\wagne\OneDrive\Área de Trabalho\WorkSpace\BarberBoss\src\BarberBoss.Application\obj\Debug\net8.0\BarberBoss.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\wagne\OneDrive\Área de Trabalho\WorkSpace\BarberBoss\src\BarberBoss.Application\obj\Debug\net8.0\BarberBoss.Application.AssemblyInfoInputs.cache
+C:\Users\wagne\OneDrive\Área de Trabalho\WorkSpace\BarberBoss\src\BarberBoss.Application\obj\Debug\net8.0\BarberBoss.Application.AssemblyInfo.cs
+C:\Users\wagne\OneDrive\Área de Trabalho\WorkSpace\BarberBoss\src\BarberBoss.Application\obj\Debug\net8.0\BarberBoss.Application.csproj.CoreCompileInputs.cache
+C:\Users\wagne\OneDrive\Área de Trabalho\WorkSpace\BarberBoss\src\BarberBoss.Application\obj\Debug\net8.0\BarberBo.8F1D4F3E.Up2Date
+C:\Users\wagne\OneDrive\Área de Trabalho\WorkSpace\BarberBoss\src\BarberBoss.Application\obj\Debug\net8.0\BarberBoss.Application.dll
+C:\Users\wagne\OneDrive\Área de Trabalho\WorkSpace\BarberBoss\src\BarberBoss.Application\obj\Debug\net8.0\refint\BarberBoss.Application.dll
+C:\Users\wagne\OneDrive\Área de Trabalho\WorkSpace\BarberBoss\src\BarberBoss.Application\obj\Debug\net8.0\BarberBoss.Application.pdb
+C:\Users\wagne\OneDrive\Área de Trabalho\WorkSpace\BarberBoss\src\BarberBoss.Application\obj\Debug\net8.0\ref\BarberBoss.Application.dll
