@@ -13,3 +13,4 @@ C:\Users\wagne\OneDrive\Área de Trabalho\WorkSpace\BarberBoss\src\BarberBoss.Co
 C:\Users\wagne\OneDrive\Área de Trabalho\WorkSpace\BarberBoss\src\BarberBoss.Communication\obj\Debug\net8.0\refint\BarberBoss.Communication.dll
 C:\Users\wagne\OneDrive\Área de Trabalho\WorkSpace\BarberBoss\src\BarberBoss.Communication\obj\Debug\net8.0\BarberBoss.Communication.pdb
 C:\Users\wagne\OneDrive\Área de Trabalho\WorkSpace\BarberBoss\src\BarberBoss.Communication\obj\Debug\net8.0\ref\BarberBoss.Communication.dll
+C:\Users\wagne\OneDrive\Área de Trabalho\WorkSpace\BarberBoss\src\BarberBoss.Communication\obj\Debug\net8.0\BarberBoss.Communication.sourcelink.json

@@ -7,10 +7,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Response\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\BarberBoss.Domain\BarberBoss.Domain.csproj" />
   </ItemGroup>
 

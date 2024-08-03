@@ -1,14 +1,30 @@
-﻿using BarberBoss.Application.UseCases.Registrar;
+﻿using BarberBoss.Application.AutoMapper;
+using BarberBoss.Application.UseCases.Registrar.Bill;
 using Microsoft.Extensions.DependencyInjection;
+
 
 namespace BarberBoss.Application
 {
     public static class DependencyInjectionExtension
     {
         
-        public static void AddScoped(this IServiceCollection service)
+        public static void AddApplication(this IServiceCollection service)
         {
-            service.AddScoped<IRegistrarFaturaUseCase, RegistrarFaturaUseCase>();
+            
+            AddUseCase(service);
+            AutoMapper(service);
+        }
+
+        private static void AutoMapper( IServiceCollection services)
+        {
+            services.AddAutoMapper(typeof(AutoMapping));
+        }
+
+        private static void AddUseCase(IServiceCollection service)
+        {
+            service.AddScoped<IRegisterBillUseCase, RegisterBillUseCase>();
+            service.AddScoped<IRegisterBillUseCase, RegisterBillUseCase>();
+
         }
     }
 }

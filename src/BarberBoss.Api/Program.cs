@@ -1,5 +1,5 @@
 using BarberBoss.Application;
-using BarberBoss.Application.UseCases.Registrar;
+using BarberBoss.Infraestructure;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -10,7 +10,12 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-DependencyInjectionExtension.AddScoped(builder.Services);
+
+builder.Services.AddApplication();
+builder.Services.AddInfraestructure(builder.Configuration);
+builder.Services.AddRepository();
+//DependencyInjectionExtension.AddApplication(builder.Services);
+
 
 
 

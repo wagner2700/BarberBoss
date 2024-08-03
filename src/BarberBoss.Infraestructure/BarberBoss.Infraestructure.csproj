@@ -11,4 +11,9 @@
     <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="8.0.2" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\BarberBoss.Communication\BarberBoss.Communication.csproj" />
+    <ProjectReference Include="..\BarberBoss.Domain\BarberBoss.Domain.csproj" />
+  </ItemGroup>
+
 </Project>

@@ -1,5 +1,7 @@
-﻿using BarberBoss.Application.UseCases.Registrar;
+﻿using BarberBoss.Application.UseCases.Registrar.Bill;
 using BarberBoss.Communication.Request;
+using BarberBoss.Communication.Response;
+using BarberBoss.Infraestructure.Exceptions;
 using Microsoft.AspNetCore.Mvc;
 
 namespace BarberBoss.Api.Controllers
@@ -10,11 +12,25 @@ namespace BarberBoss.Api.Controllers
     {
 
         [HttpPost]
-        public IActionResult RegistrarFatura(RegistrarFaturaRequestJson request , IRegistrarFaturaUseCase useCase)
+        public IActionResult RegistrarFatura(RegisterBillRequestJson request , IRegisterBillUseCase useCase)
         {
-            useCase.Registrar(request);
+            try
+            {
+                var response = useCase.Registrar(request);
 
-            return Ok();
+                return Created(string.Empty , response);
+
+            }catch (ErrorOnValidatorException ex)
+            {
+                var response = new ResponseErrorJson(ex.Errors);
+                return BadRequest(response);
+
+            }catch(BarberBossException ex)
+            {
+                var responseError = new ResponseErrorJson("Erro desconhecido");
+                return StatusCode( StatusCodes.Status500InternalServerError , responseError );
+            }
+            
         }
     }
 }

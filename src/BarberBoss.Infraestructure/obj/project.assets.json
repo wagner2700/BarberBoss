@@ -267,6 +267,29 @@
             "related": ".xml"
           }
         }
+      },
+      "BarberBoss.Communication/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "BarberBoss.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/BarberBoss.Communication.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BarberBoss.Communication.dll": {}
+        }
+      },
+      "BarberBoss.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/BarberBoss.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BarberBoss.Domain.dll": {}
+        }
       }
     }
   },
@@ -710,10 +733,22 @@
         "pomelo.entityframeworkcore.mysql.8.0.2.nupkg.sha512",
         "pomelo.entityframeworkcore.mysql.nuspec"
       ]
+    },
+    "BarberBoss.Communication/1.0.0": {
+      "type": "project",
+      "path": "../BarberBoss.Communication/BarberBoss.Communication.csproj",
+      "msbuildProject": "../BarberBoss.Communication/BarberBoss.Communication.csproj"
+    },
+    "BarberBoss.Domain/1.0.0": {
+      "type": "project",
+      "path": "../BarberBoss.Domain/BarberBoss.Domain.csproj",
+      "msbuildProject": "../BarberBoss.Domain/BarberBoss.Domain.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net8.0": [
+      "BarberBoss.Communication >= 1.0.0",
+      "BarberBoss.Domain >= 1.0.0",
       "Microsoft.EntityFrameworkCore >= 8.0.7",
       "Pomelo.EntityFrameworkCore.MySql >= 8.0.2"
     ]
@@ -750,7 +785,14 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\wagne\\OneDrive\\Área de Trabalho\\WorkSpace\\BarberBoss\\src\\BarberBoss.Communication\\BarberBoss.Communication.csproj": {
+              "projectPath": "C:\\Users\\wagne\\OneDrive\\Área de Trabalho\\WorkSpace\\BarberBoss\\src\\BarberBoss.Communication\\BarberBoss.Communication.csproj"
+            },
+            "C:\\Users\\wagne\\OneDrive\\Área de Trabalho\\WorkSpace\\BarberBoss\\src\\BarberBoss.Domain\\BarberBoss.Domain.csproj": {
+              "projectPath": "C:\\Users\\wagne\\OneDrive\\Área de Trabalho\\WorkSpace\\BarberBoss\\src\\BarberBoss.Domain\\BarberBoss.Domain.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

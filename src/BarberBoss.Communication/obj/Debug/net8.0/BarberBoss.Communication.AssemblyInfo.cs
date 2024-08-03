@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BarberBoss.Communication")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+13c8adf983ab25c6b2ee955ff7711c88fe4a222f")]
 [assembly: System.Reflection.AssemblyProductAttribute("BarberBoss.Communication")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BarberBoss.Communication")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
