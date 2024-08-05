@@ -11,7 +11,7 @@ namespace BarberBoss.Api.Filters
         {
             if(context.Exception is ErrorOnValidatorException)
             {
-
+                HandleProjectException(context);
             }
             else
             {
@@ -21,7 +21,17 @@ namespace BarberBoss.Api.Filters
 
         private void HandleProjectException(ExceptionContext context)
         {
+            if(context.Exception is ErrorOnValidatorException ex)
+            {
+                var response = new ResponseErrorJson(ex.Errors);
+                context.HttpContext.Response.StatusCode = StatusCodes.Status400BadRequest;
+                context.Result = new BadRequestObjectResult(response);
+            }
+            else
+            {
 
+            }
+           
         }
 
         private void ThrowUnknowError(ExceptionContext context)

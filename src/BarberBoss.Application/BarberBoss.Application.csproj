@@ -18,4 +18,11 @@
     <ProjectReference Include="..\BarberBoss.Exception\BarberBoss.Exception.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <EmbeddedResource Update="UseCases\Resources\ResourceErrorMessages.resx">
+      <LastGenOutput>ResourceErrorMessages.Designer.cs</LastGenOutput>
+      <Generator>ResXFileCodeGenerator</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+
 </Project>

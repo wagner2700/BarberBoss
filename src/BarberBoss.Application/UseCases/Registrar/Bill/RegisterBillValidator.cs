@@ -1,5 +1,6 @@
-﻿using BarberBoss.Communication.Request;
-using BarberBoss.Domain.Entities;
+﻿
+using BarberBoss.Application.UseCases.Resources;
+using BarberBoss.Communication.Request;
 using FluentValidation;
 
 namespace BarberBoss.Application.UseCases.Registrar.Bill
@@ -9,9 +10,9 @@ namespace BarberBoss.Application.UseCases.Registrar.Bill
 
         public RegisterBillValidator()
         {
-            RuleFor(bill => bill.Valor).GreaterThan(0).WithMessage("Valor deve ser maior que zero");
-            RuleFor(bill => bill.Data).LessThanOrEqualTo(DateTime.UtcNow).WithMessage("Data não pode ser no futuro");
-            RuleFor(bill => bill.TipoPagamento).IsInEnum().WithMessage("Tipo de pagamento inválido");
+            RuleFor(bill => bill.Valor).GreaterThan(0).WithMessage(ResourceErrorMessages.ValorMaiorQueZero);
+            RuleFor(bill => bill.Data).LessThanOrEqualTo(DateTime.UtcNow).WithMessage(ResourceErrorMessages.DataNaoFututo);
+            RuleFor(bill => bill.TipoPagamento).IsInEnum().WithMessage(ResourceErrorMessages.PagamentoInválido);
         }
     }
 }

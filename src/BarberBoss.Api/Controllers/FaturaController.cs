@@ -14,23 +14,8 @@ namespace BarberBoss.Api.Controllers
         [HttpPost]
         public IActionResult RegistrarFatura(RegisterBillRequestJson request , IRegisterBillUseCase useCase)
         {
-            try
-            {
-                var response = useCase.Registrar(request);
-
-                return Created(string.Empty , response);
-
-            }catch (ErrorOnValidatorException ex)
-            {
-                var response = new ResponseErrorJson(ex.Errors);
-                return BadRequest(response);
-
-            }catch(BarberBossException ex)
-            {
-                var responseError = new ResponseErrorJson("Erro desconhecido");
-                return StatusCode( StatusCodes.Status500InternalServerError , responseError );
-            }
-            
+            var response = useCase.Registrar(request);
+            return Created(string.Empty , response); 
         }
     }
 }
