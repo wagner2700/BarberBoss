@@ -19,7 +19,15 @@
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Update="UseCases\Resources\ResourceErrorMessages.resx">
+    <Compile Update="Resources\ResourceErrorMessages.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>ResourceErrorMessages.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Resources\ResourceErrorMessages.resx">
       <LastGenOutput>ResourceErrorMessages.Designer.cs</LastGenOutput>
       <Generator>ResXFileCodeGenerator</Generator>
     </EmbeddedResource>

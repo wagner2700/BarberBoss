@@ -18,3 +18,9 @@ C:\Users\wagne\OneDrive\Área de Trabalho\WorkSpace\BarberBoss\src\BarberBoss.Ap
 C:\Users\wagne\OneDrive\Área de Trabalho\WorkSpace\BarberBoss\src\BarberBoss.Application\obj\Debug\net8.0\BarberBoss.Application.sourcelink.json
 C:\Users\wagne\OneDrive\Área de Trabalho\WorkSpace\BarberBoss\src\BarberBoss.Application\bin\Debug\net8.0\BarberBoss.Exception.dll
 C:\Users\wagne\OneDrive\Área de Trabalho\WorkSpace\BarberBoss\src\BarberBoss.Application\bin\Debug\net8.0\BarberBoss.Exception.pdb
+C:\Users\wagne\OneDrive\Área de Trabalho\WorkSpace\BarberBoss\src\BarberBoss.Application\obj\Debug\net8.0\BarberBoss.Application.csproj.GenerateResource.cache
+C:\Users\wagne\OneDrive\Área de Trabalho\WorkSpace\BarberBoss\src\BarberBoss.Application\bin\Debug\net8.0\pt-PT\BarberBoss.Application.resources.dll
+C:\Users\wagne\OneDrive\Área de Trabalho\WorkSpace\BarberBoss\src\BarberBoss.Application\obj\Debug\net8.0\BarberBoss.Application.Resources.ResourceErrorMessages.en-EN.resources
+C:\Users\wagne\OneDrive\Área de Trabalho\WorkSpace\BarberBoss\src\BarberBoss.Application\obj\Debug\net8.0\BarberBoss.Application.Resources.ResourceErrorMessages.resources
+C:\Users\wagne\OneDrive\Área de Trabalho\WorkSpace\BarberBoss\src\BarberBoss.Application\obj\Debug\net8.0\BarberBoss.Application.Resources.ResourceErrorMessages.pt-PT.resources
+C:\Users\wagne\OneDrive\Área de Trabalho\WorkSpace\BarberBoss\src\BarberBoss.Application\obj\Debug\net8.0\pt-PT\BarberBoss.Application.resources.dll

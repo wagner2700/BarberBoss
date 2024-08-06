@@ -1,5 +1,5 @@
 ﻿
-using BarberBoss.Application.UseCases.Resources;
+using BarberBoss.Application.Resources;
 using BarberBoss.Communication.Request;
 using FluentValidation;
 
