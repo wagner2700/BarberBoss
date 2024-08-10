@@ -120,6 +120,9 @@
   <data name="DataNaoFututo" xml:space="preserve">
     <value>Data não pode ser no futuro</value>
   </data>
+  <data name="EmailCadastrado" xml:space="preserve">
+    <value>Emailjá esta cadastrado</value>
+  </data>
   <data name="EmailInvalido" xml:space="preserve">
     <value>Email invalido</value>
   </data>
@@ -134,6 +137,21 @@
   </data>
   <data name="RegistroNaoEncontrado" xml:space="preserve">
     <value>Registro não foi encontrado</value>
+  </data>
+  <data name="SenhainvalidaCaracterEspecial" xml:space="preserve">
+    <value>Senha deve conter caracterespecial</value>
+  </data>
+  <data name="SenhainvalidaCaracterNumerico" xml:space="preserve">
+    <value>Senha deve conter caracter numerico</value>
+  </data>
+  <data name="SenhainvalidaLetraMaiuscula" xml:space="preserve">
+    <value>Senha deve conter ao menos uma letra maiuscula e uma minuscula</value>
+  </data>
+  <data name="SenhainvalidaMaiorSeisCaracter" xml:space="preserve">
+    <value>Senha deve conter mais que 6 caracteres</value>
+  </data>
+  <data name="SenhaVazia" xml:space="preserve">
+    <value>Senha não pode ser vazia</value>
   </data>
   <data name="ValorMaiorQueZero" xml:space="preserve">
     <value>Valor deve ser maior que zero</value>

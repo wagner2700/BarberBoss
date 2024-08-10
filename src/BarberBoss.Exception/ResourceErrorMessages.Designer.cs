@@ -70,6 +70,15 @@ namespace BarberBoss.Exception {
         }
         
         /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Emailjá esta cadastrado.
+        /// </summary>
+        public static string EmailCadastrado {
+            get {
+                return ResourceManager.GetString("EmailCadastrado", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a Email invalido.
         /// </summary>
         public static string EmailInvalido {
@@ -111,6 +120,51 @@ namespace BarberBoss.Exception {
         public static string RegistroNaoEncontrado {
             get {
                 return ResourceManager.GetString("RegistroNaoEncontrado", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Senha deve conter caracterespecial.
+        /// </summary>
+        public static string SenhainvalidaCaracterEspecial {
+            get {
+                return ResourceManager.GetString("SenhainvalidaCaracterEspecial", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Senha deve conter caracter numerico.
+        /// </summary>
+        public static string SenhainvalidaCaracterNumerico {
+            get {
+                return ResourceManager.GetString("SenhainvalidaCaracterNumerico", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Senha deve conter ao menos uma letra maiuscula e uma minuscula.
+        /// </summary>
+        public static string SenhainvalidaLetraMaiuscula {
+            get {
+                return ResourceManager.GetString("SenhainvalidaLetraMaiuscula", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Senha deve conter mais que 6 caracteres.
+        /// </summary>
+        public static string SenhainvalidaMaiorSeisCaracter {
+            get {
+                return ResourceManager.GetString("SenhainvalidaMaiorSeisCaracter", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Senha não pode ser vazia.
+        /// </summary>
+        public static string SenhaVazia {
+            get {
+                return ResourceManager.GetString("SenhaVazia", resourceCulture);
             }
         }
         

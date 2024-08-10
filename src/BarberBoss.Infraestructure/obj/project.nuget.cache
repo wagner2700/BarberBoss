@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "0TShBdNSuFM=",
+  "dgSpecHash": "WGlqel0IzD0=",
   "success": true,
   "projectFilePath": "C:\\Users\\wagne\\OneDrive\\Área de Trabalho\\WorkSpace\\BarberBoss\\src\\BarberBoss.Infraestructure\\BarberBoss.Infraestructure.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\wagne\\.nuget\\packages\\bcrypt.net-next\\4.0.3\\bcrypt.net-next.4.0.3.nupkg.sha512",
     "C:\\Users\\wagne\\.nuget\\packages\\microsoft.entityframeworkcore\\8.0.7\\microsoft.entityframeworkcore.8.0.7.nupkg.sha512",
     "C:\\Users\\wagne\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\8.0.7\\microsoft.entityframeworkcore.abstractions.8.0.7.nupkg.sha512",
     "C:\\Users\\wagne\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\8.0.7\\microsoft.entityframeworkcore.analyzers.8.0.7.nupkg.sha512",

@@ -10,7 +10,9 @@ namespace BarberBoss.Application.UseCases.User.Validator
         {
             RuleFor(user => user.Name).NotEmpty().WithMessage(ResourceErrorMessages.NomeVazio);
             RuleFor(user => user.Email).NotEmpty().WithMessage(ResourceErrorMessages.EmailVazio)
-                .EmailAddress().WithMessage(ResourceErrorMessages.EmailVazio);
+                .EmailAddress().WithMessage(ResourceErrorMessages.EmailInvalido);
+
+            RuleFor(user => user.Password).SetValidator(new PasswordValidator<UserRequestJson>());
             
         }
     }
