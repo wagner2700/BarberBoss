@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using BarberBoss.Application.UseCases.Bill.Validator;
 using BarberBoss.Communication.Request;
 using BarberBoss.Communication.Response;
 using BarberBoss.Domain.Bills;

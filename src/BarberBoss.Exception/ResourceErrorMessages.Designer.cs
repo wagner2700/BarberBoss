@@ -70,6 +70,33 @@ namespace BarberBoss.Exception {
         }
         
         /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Email invalido.
+        /// </summary>
+        public static string EmailInvalido {
+            get {
+                return ResourceManager.GetString("EmailInvalido", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Email não pode ser vazio.
+        /// </summary>
+        public static string EmailVazio {
+            get {
+                return ResourceManager.GetString("EmailVazio", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Nome não pode ser vazio.
+        /// </summary>
+        public static string NomeVazio {
+            get {
+                return ResourceManager.GetString("NomeVazio", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a Tipo de pagamento inválido.
         /// </summary>
         public static string PagamentoInválido {

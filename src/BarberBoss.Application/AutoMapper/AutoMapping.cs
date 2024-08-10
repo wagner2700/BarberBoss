@@ -16,11 +16,13 @@ namespace BarberBoss.Application.AutoMapper
         private void RequestToEntity()
         {
             CreateMap<RequestBillJson, Fatura>();
+            CreateMap<UserRequestJson, User>();
         }
 
         private void EntityToRequest()
         {
             CreateMap<Fatura, ResponseFaturaJson>();
+            CreateMap<User, UserRequestJson>();
             
         }
     }

@@ -1,4 +1,5 @@
 ﻿using BarberBoss.Domain.Bills;
+using BarberBoss.Domain.Users;
 using BarberBoss.Infraestructure.DataAcess;
 using BarberBoss.Infraestructure.DataAcess.Repository;
 using Microsoft.EntityFrameworkCore;
@@ -25,9 +26,10 @@ namespace BarberBoss.Infraestructure
             service.AddScoped<IBillWriteOnlyRepository, RegistrarFaturaRepository>();
             service.AddScoped<IBillReadOnlyRepository, RegistrarFaturaRepository>();
             service.AddScoped<IBillUpdateOnlyRepository, RegistrarFaturaRepository>();
-
-            
+            service.AddScoped<IRegisterUserRepository, UserRepository>();
         
+
+
         }
 
         private static void AddDbContext(IServiceCollection service , IConfiguration configuration )

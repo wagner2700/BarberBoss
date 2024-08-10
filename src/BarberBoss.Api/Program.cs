@@ -2,6 +2,9 @@ using BarberBoss.Api.Filters;
 using BarberBoss.Api.Midleware;
 using BarberBoss.Application;
 using BarberBoss.Infraestructure;
+using BarberBoss.Infraestructure.DataAcess;
+using BarberBoss.Infraestructure.Migrations;
+using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -34,6 +37,8 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
+await MigrateDatabase(app);
+
 app.UseMiddleware<CultureMidleware>();
 
 app.UseHttpsRedirection();
@@ -42,4 +47,17 @@ app.UseAuthorization();
 
 app.MapControllers();
 
+
 app.Run();
+
+async Task MigrateDatabase(WebApplication app)
+{
+    using var scope = app.Services.CreateScope();
+    await DataBaseMigration.MigrateDatabase(scope.ServiceProvider);
+   
+}
+
+
+
+
+
