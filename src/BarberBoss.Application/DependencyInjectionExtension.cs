@@ -26,9 +26,8 @@ namespace BarberBoss.Application
         private static void AddUseCase(IServiceCollection service)
         {
             service.AddScoped<IRegisterBillUseCase, RegisterBillUseCase>();
-            
-
-
+            service.AddScoped<IDeleteBillUseCase, DeleteBillUseCase>();
+            service.AddScoped<IUpdateBillUseCase, UpdateBillUseCase>();
         }
     }
 }

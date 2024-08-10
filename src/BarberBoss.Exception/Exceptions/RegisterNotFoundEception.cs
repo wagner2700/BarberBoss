@@ -8,10 +8,7 @@ namespace BarberBoss.Exception.Exceptions
 
         public override int StatusCode => (int)HttpStatusCode.NotFound;
 
-        public RegisterNotFoundEception(string errorMessage) : base(errorMessage)
-        {
-           
-        }
+        public RegisterNotFoundEception(string errorMessage) : base(errorMessage){}
 
         public override List<string> GetErrors()
         {

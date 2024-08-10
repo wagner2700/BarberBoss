@@ -12,7 +12,7 @@ namespace Validator.Tests.Bills.Register
         [Fact]
         public void Sucess()
         {
-            var validator = new RegisterBillValidator();
+            var validator = new BillValidator();
 
             var request = BillRequestBuilder.Build();
 
@@ -25,7 +25,7 @@ namespace Validator.Tests.Bills.Register
         public void Amoun_Equals_Zero()
         {
             var request = BillRequestBuilder.Build();
-            var validator = new RegisterBillValidator();
+            var validator = new BillValidator();
 
             request.Valor = 0;
 

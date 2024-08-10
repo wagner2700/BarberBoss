@@ -2,7 +2,7 @@
 
 namespace BarberBoss.Communication.Request
 {
-    public class RegisterBillRequestJson
+    public class RequestBillJson
     {
         public DateTime Data { get; set; }
         public decimal Valor { get; set; }

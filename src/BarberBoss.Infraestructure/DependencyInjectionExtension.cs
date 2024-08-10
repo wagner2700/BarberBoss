@@ -1,5 +1,4 @@
 ﻿using BarberBoss.Domain.Bills;
-using BarberBoss.Domain.Register;
 using BarberBoss.Infraestructure.DataAcess;
 using BarberBoss.Infraestructure.DataAcess.Repository;
 using Microsoft.EntityFrameworkCore;
@@ -23,9 +22,9 @@ namespace BarberBoss.Infraestructure
         public static void AddRepository(IServiceCollection service)
         {
             service.AddScoped<IUnitOfWork, UnitOfWork>();
-            service.AddScoped<IRegisterFatura , RegistrarFaturaRepository>();
-            service.AddScoped<IRegisterFatura , RegistrarFaturaRepository>();
+            service.AddScoped<IBillWriteOnlyRepository, RegistrarFaturaRepository>();
             service.AddScoped<IBillReadOnlyRepository, RegistrarFaturaRepository>();
+            service.AddScoped<IBillUpdateOnlyRepository, RegistrarFaturaRepository>();
 
             
         

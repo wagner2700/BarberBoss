@@ -4,10 +4,10 @@ using FluentValidation;
 
 namespace BarberBoss.Application.UseCases.Bill
 {
-    public class RegisterBillValidator : AbstractValidator<RegisterBillRequestJson>
+    public class BillValidator : AbstractValidator<RequestBillJson>
     {
 
-        public RegisterBillValidator()
+        public BillValidator()
         {
             RuleFor(bill => bill.Valor).GreaterThan(0).WithMessage(ResourceErrorMessages.ValorMaiorQueZero);
             RuleFor(bill => bill.Data).LessThanOrEqualTo(DateTime.UtcNow).WithMessage(ResourceErrorMessages.DataNaoFututo);
