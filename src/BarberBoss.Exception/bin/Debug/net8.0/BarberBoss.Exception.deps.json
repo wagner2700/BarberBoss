@@ -9,6 +9,11 @@
       "BarberBoss.Exception/1.0.0": {
         "runtime": {
           "BarberBoss.Exception.dll": {}
+        },
+        "resources": {
+          "pt-PT/BarberBoss.Exception.resources.dll": {
+            "locale": "pt-PT"
+          }
         }
       }
     }

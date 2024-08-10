@@ -13,7 +13,7 @@
   <ItemGroup>
     <ProjectReference Include="..\BarberBoss.Application\BarberBoss.Application.csproj" />
     <ProjectReference Include="..\BarberBoss.Communication\BarberBoss.Communication.csproj" />
-    <ProjectReference Include="..\BarberBoss.Exception\BarberBoss.Exception.csproj" />
+    <ProjectReference Include="..\BarberBoss.Domain\BarberBoss.Domain.csproj" />
     <ProjectReference Include="..\BarberBoss.Infraestructure\BarberBoss.Infraestructure.csproj" />
   </ItemGroup>
 

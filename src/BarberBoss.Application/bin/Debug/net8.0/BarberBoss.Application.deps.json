@@ -17,11 +17,6 @@
         },
         "runtime": {
           "BarberBoss.Application.dll": {}
-        },
-        "resources": {
-          "pt-PT/BarberBoss.Application.resources.dll": {
-            "locale": "pt-PT"
-          }
         }
       },
       "AutoMapper/13.0.1": {
@@ -91,6 +86,11 @@
       "BarberBoss.Exception/1.0.0": {
         "runtime": {
           "BarberBoss.Exception.dll": {}
+        },
+        "resources": {
+          "pt-PT/BarberBoss.Exception.resources.dll": {
+            "locale": "pt-PT"
+          }
         }
       }
     }

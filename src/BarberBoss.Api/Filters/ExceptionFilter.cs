@@ -1,4 +1,5 @@
 ﻿using BarberBoss.Communication.Response;
+using BarberBoss.Exception.Exceptions;
 using BarberBoss.Infraestructure.Exceptions;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Filters;
@@ -9,7 +10,7 @@ namespace BarberBoss.Api.Filters
     {
         public void OnException(ExceptionContext context)
         {
-            if(context.Exception is ErrorOnValidatorException)
+            if(context.Exception is BarberBossException)
             {
                 HandleProjectException(context);
             }
@@ -21,17 +22,13 @@ namespace BarberBoss.Api.Filters
 
         private void HandleProjectException(ExceptionContext context)
         {
-            if(context.Exception is ErrorOnValidatorException ex)
-            {
-                var response = new ResponseErrorJson(ex.Errors);
-                context.HttpContext.Response.StatusCode = StatusCodes.Status400BadRequest;
-                context.Result = new BadRequestObjectResult(response);
-            }
-            else
-            {
+            var barberBoss = context.Exception as BarberBossException;
+            var errorResponse = new ResponseErrorJson(barberBoss!.GetErrors());
 
-            }
-           
+            
+
+            context.HttpContext.Response.StatusCode = barberBoss.StatusCode;
+            context.Result = new ObjectResult(errorResponse);       
         }
 
         private void ThrowUnknowError(ExceptionContext context)

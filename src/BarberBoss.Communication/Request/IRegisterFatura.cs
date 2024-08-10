@@ -1,10 +1,9 @@
-﻿using BarberBoss.Communication.Request;
-using BarberBoss.Domain.Entities;
+﻿using BarberBoss.Domain.Entities;
 
 namespace BarberBoss.Domain.Register
 {
     public interface IRegisterFatura
     {
-        void RegisterBill(Fatura fatura);
+        Task RegisterBill(Fatura fatura);
     }
 }

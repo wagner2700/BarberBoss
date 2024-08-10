@@ -19,10 +19,8 @@ builder.Services.AddMvc(opt =>
 
 builder.Services.AddApplication();
 builder.Services.AddInfraestructure(builder.Configuration);
-builder.Services.AddRepository();
+//builder.Services.AddRepository();
 //DependencyInjectionExtension.AddApplication(builder.Services);
-
-
 
 
 var app = builder.Build();

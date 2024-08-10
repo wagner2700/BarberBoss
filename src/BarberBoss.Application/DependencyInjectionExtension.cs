@@ -1,5 +1,6 @@
 ﻿using BarberBoss.Application.AutoMapper;
-using BarberBoss.Application.UseCases.Registrar.Bill;
+using BarberBoss.Application.UseCases.Bill;
+using BarberBoss.Infraestructure.DataAcess;
 using Microsoft.Extensions.DependencyInjection;
 
 
@@ -13,6 +14,8 @@ namespace BarberBoss.Application
             
             AddUseCase(service);
             AutoMapper(service);
+
+            service.AddScoped<IBillGetByIdUseCase, BillGetByIdUseCase>();
         }
 
         private static void AutoMapper( IServiceCollection services)
@@ -23,7 +26,8 @@ namespace BarberBoss.Application
         private static void AddUseCase(IServiceCollection service)
         {
             service.AddScoped<IRegisterBillUseCase, RegisterBillUseCase>();
-            service.AddScoped<IRegisterBillUseCase, RegisterBillUseCase>();
+            
+
 
         }
     }

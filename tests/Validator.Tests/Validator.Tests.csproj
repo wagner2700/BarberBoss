@@ -11,6 +11,7 @@
 
   <ItemGroup>
     <PackageReference Include="coverlet.collector" Version="6.0.0" />
+    <PackageReference Include="FluentAssertions" Version="6.12.0" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.8.0" />
     <PackageReference Include="xunit" Version="2.5.3" />
     <PackageReference Include="xunit.runner.visualstudio" Version="2.5.3" />
@@ -18,7 +19,8 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\src\BarberBoss.Application\BarberBoss.Application.csproj" />
-    <ProjectReference Include="..\..\src\BarberBoss.Domain\BarberBoss.Domain.csproj" />
+    <ProjectReference Include="..\..\src\BarberBoss.Communication\BarberBoss.Communication.csproj" />
+    <ProjectReference Include="..\..\src\BarberBoss.Exception\BarberBoss.Exception.csproj" />
     <ProjectReference Include="..\CommoTestsLibraries\CommonTestsLibraries.csproj" />
   </ItemGroup>
 

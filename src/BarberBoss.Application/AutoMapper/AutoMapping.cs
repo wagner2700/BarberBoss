@@ -21,6 +21,7 @@ namespace BarberBoss.Application.AutoMapper
         private void EntityToRequest()
         {
             CreateMap<Fatura, ResponseFaturaJson>();
+            
         }
     }
 }

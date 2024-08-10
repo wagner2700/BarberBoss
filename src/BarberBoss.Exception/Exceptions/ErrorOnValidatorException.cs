@@ -1,13 +1,23 @@
-﻿namespace BarberBoss.Infraestructure.Exceptions
+﻿using System.Net;
+
+namespace BarberBoss.Infraestructure.Exceptions
 {
     public class ErrorOnValidatorException : BarberBossException
     {
 
-        public readonly List<string> Errors;
+        public  readonly List<string> _errors;
 
-        public ErrorOnValidatorException(List<string> errorMessges) 
+        public override int StatusCode => (int)HttpStatusCode.BadRequest;
+
+       
+
+        public ErrorOnValidatorException(List<string> errorMessges)  : base(string.Empty)
         {
-            Errors = errorMessges;
+            _errors = errorMessges;
+            
+
         }
+
+        public override List<string> GetErrors() { return _errors; }
     }
 }

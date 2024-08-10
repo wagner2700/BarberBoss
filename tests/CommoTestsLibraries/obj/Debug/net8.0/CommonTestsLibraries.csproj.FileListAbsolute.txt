@@ -9,7 +9,7 @@ C:\Users\wagne\OneDrive\Área de Trabalho\WorkSpace\BarberBoss\tests\CommoTestsL
 C:\Users\wagne\OneDrive\Área de Trabalho\WorkSpace\BarberBoss\tests\CommoTestsLibraries\bin\Debug\net8.0\BarberBoss.Communication.pdb
 C:\Users\wagne\OneDrive\Área de Trabalho\WorkSpace\BarberBoss\tests\CommoTestsLibraries\bin\Debug\net8.0\BarberBoss.Domain.pdb
 C:\Users\wagne\OneDrive\Área de Trabalho\WorkSpace\BarberBoss\tests\CommoTestsLibraries\bin\Debug\net8.0\BarberBoss.Exception.pdb
-C:\Users\wagne\OneDrive\Área de Trabalho\WorkSpace\BarberBoss\tests\CommoTestsLibraries\bin\Debug\net8.0\pt-PT\BarberBoss.Application.resources.dll
+C:\Users\wagne\OneDrive\Área de Trabalho\WorkSpace\BarberBoss\tests\CommoTestsLibraries\bin\Debug\net8.0\pt-PT\BarberBoss.Exception.resources.dll
 C:\Users\wagne\OneDrive\Área de Trabalho\WorkSpace\BarberBoss\tests\CommoTestsLibraries\obj\Debug\net8.0\CommonTestsLibraries.csproj.AssemblyReference.cache
 C:\Users\wagne\OneDrive\Área de Trabalho\WorkSpace\BarberBoss\tests\CommoTestsLibraries\obj\Debug\net8.0\CommonTestsLibraries.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\wagne\OneDrive\Área de Trabalho\WorkSpace\BarberBoss\tests\CommoTestsLibraries\obj\Debug\net8.0\CommonTestsLibraries.AssemblyInfoInputs.cache

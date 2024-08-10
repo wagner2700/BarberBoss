@@ -10,7 +10,7 @@
         "dependencies": {
           "BarberBoss.Application": "1.0.0",
           "BarberBoss.Communication": "1.0.0",
-          "BarberBoss.Exception": "1.0.0",
+          "BarberBoss.Domain": "1.0.0",
           "BarberBoss.Infraestructure": "1.0.0",
           "Swashbuckle.AspNetCore": "6.4.0"
         },
@@ -204,11 +204,6 @@
         },
         "runtime": {
           "BarberBoss.Application.dll": {}
-        },
-        "resources": {
-          "pt-PT/BarberBoss.Application.resources.dll": {
-            "locale": "pt-PT"
-          }
         }
       },
       "BarberBoss.Communication/1.0.0": {
@@ -227,6 +222,11 @@
       "BarberBoss.Exception/1.0.0": {
         "runtime": {
           "BarberBoss.Exception.dll": {}
+        },
+        "resources": {
+          "pt-PT/BarberBoss.Exception.resources.dll": {
+            "locale": "pt-PT"
+          }
         }
       },
       "BarberBoss.Infraestructure/1.0.0": {

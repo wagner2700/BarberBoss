@@ -1,9 +1,3 @@
-C:\Users\wagne\OneDrive\Área de Trabalho\WorkSpace\BarberBoss\src\BarberBoss.Infraestructure\obj\Debug\net8.0\BarberBoss.Infraestructure.csproj.AssemblyReference.cache
-C:\Users\wagne\OneDrive\Área de Trabalho\WorkSpace\BarberBoss\src\BarberBoss.Infraestructure\obj\Debug\net8.0\BarberBoss.Infraestructure.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\wagne\OneDrive\Área de Trabalho\WorkSpace\BarberBoss\src\BarberBoss.Infraestructure\obj\Debug\net8.0\BarberBoss.Infraestructure.AssemblyInfoInputs.cache
-C:\Users\wagne\OneDrive\Área de Trabalho\WorkSpace\BarberBoss\src\BarberBoss.Infraestructure\obj\Debug\net8.0\BarberBoss.Infraestructure.AssemblyInfo.cs
-C:\Users\wagne\OneDrive\Área de Trabalho\WorkSpace\BarberBoss\src\BarberBoss.Infraestructure\obj\Debug\net8.0\BarberBoss.Infraestructure.csproj.CoreCompileInputs.cache
-C:\Users\wagne\OneDrive\Área de Trabalho\WorkSpace\BarberBoss\src\BarberBoss.Infraestructure\obj\Debug\net8.0\BarberBoss.Infraestructure.sourcelink.json
 C:\Users\wagne\OneDrive\Área de Trabalho\WorkSpace\BarberBoss\src\BarberBoss.Infraestructure\bin\Debug\net8.0\BarberBoss.Infraestructure.deps.json
 C:\Users\wagne\OneDrive\Área de Trabalho\WorkSpace\BarberBoss\src\BarberBoss.Infraestructure\bin\Debug\net8.0\BarberBoss.Infraestructure.dll
 C:\Users\wagne\OneDrive\Área de Trabalho\WorkSpace\BarberBoss\src\BarberBoss.Infraestructure\bin\Debug\net8.0\BarberBoss.Infraestructure.pdb
@@ -11,6 +5,12 @@ C:\Users\wagne\OneDrive\Área de Trabalho\WorkSpace\BarberBoss\src\BarberBoss.In
 C:\Users\wagne\OneDrive\Área de Trabalho\WorkSpace\BarberBoss\src\BarberBoss.Infraestructure\bin\Debug\net8.0\BarberBoss.Domain.dll
 C:\Users\wagne\OneDrive\Área de Trabalho\WorkSpace\BarberBoss\src\BarberBoss.Infraestructure\bin\Debug\net8.0\BarberBoss.Communication.pdb
 C:\Users\wagne\OneDrive\Área de Trabalho\WorkSpace\BarberBoss\src\BarberBoss.Infraestructure\bin\Debug\net8.0\BarberBoss.Domain.pdb
+C:\Users\wagne\OneDrive\Área de Trabalho\WorkSpace\BarberBoss\src\BarberBoss.Infraestructure\obj\Debug\net8.0\BarberBoss.Infraestructure.csproj.AssemblyReference.cache
+C:\Users\wagne\OneDrive\Área de Trabalho\WorkSpace\BarberBoss\src\BarberBoss.Infraestructure\obj\Debug\net8.0\BarberBoss.Infraestructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\wagne\OneDrive\Área de Trabalho\WorkSpace\BarberBoss\src\BarberBoss.Infraestructure\obj\Debug\net8.0\BarberBoss.Infraestructure.AssemblyInfoInputs.cache
+C:\Users\wagne\OneDrive\Área de Trabalho\WorkSpace\BarberBoss\src\BarberBoss.Infraestructure\obj\Debug\net8.0\BarberBoss.Infraestructure.AssemblyInfo.cs
+C:\Users\wagne\OneDrive\Área de Trabalho\WorkSpace\BarberBoss\src\BarberBoss.Infraestructure\obj\Debug\net8.0\BarberBoss.Infraestructure.csproj.CoreCompileInputs.cache
+C:\Users\wagne\OneDrive\Área de Trabalho\WorkSpace\BarberBoss\src\BarberBoss.Infraestructure\obj\Debug\net8.0\BarberBoss.Infraestructure.sourcelink.json
 C:\Users\wagne\OneDrive\Área de Trabalho\WorkSpace\BarberBoss\src\BarberBoss.Infraestructure\obj\Debug\net8.0\BarberBo.828B9E66.Up2Date
 C:\Users\wagne\OneDrive\Área de Trabalho\WorkSpace\BarberBoss\src\BarberBoss.Infraestructure\obj\Debug\net8.0\BarberBoss.Infraestructure.dll
 C:\Users\wagne\OneDrive\Área de Trabalho\WorkSpace\BarberBoss\src\BarberBoss.Infraestructure\obj\Debug\net8.0\refint\BarberBoss.Infraestructure.dll

@@ -87,11 +87,6 @@
         },
         "runtime": {
           "BarberBoss.Application.dll": {}
-        },
-        "resources": {
-          "pt-PT/BarberBoss.Application.resources.dll": {
-            "locale": "pt-PT"
-          }
         }
       },
       "BarberBoss.Communication/1.0.0": {
@@ -110,6 +105,11 @@
       "BarberBoss.Exception/1.0.0": {
         "runtime": {
           "BarberBoss.Exception.dll": {}
+        },
+        "resources": {
+          "pt-PT/BarberBoss.Exception.resources.dll": {
+            "locale": "pt-PT"
+          }
         }
       }
     }
