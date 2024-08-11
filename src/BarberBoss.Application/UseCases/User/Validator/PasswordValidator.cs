@@ -42,7 +42,7 @@ namespace BarberBoss.Application.UseCases.User.Validator
                 context.MessageFormatter.AppendArgument("errormessage", ResourceErrorMessages.SenhainvalidaCaracterNumerico);
                 return false;
             }
-            if (!Regex.IsMatch(password, @"[\\!\\?\\*\\.]")) // Caracteres especiais
+            if (!Regex.IsMatch(password, @"[\\@\\!\\?\\*\\.]")) // Caracteres especiais
             {
                 context.MessageFormatter.AppendArgument("errorMessage", ResourceErrorMessages.SenhainvalidaCaracterEspecial);
                 return false;

@@ -51,5 +51,7 @@ namespace BarberBoss.Api.Controllers
             return NoContent();
         }
 
+
+
     }
 }

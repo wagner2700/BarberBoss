@@ -3,6 +3,7 @@ using BarberBoss.Application.UseCases.User.Validator;
 using BarberBoss.Communication.Request;
 using BarberBoss.Communication.Response;
 using BarberBoss.Domain.Security;
+using BarberBoss.Domain.Token;
 using BarberBoss.Domain.Users;
 using BarberBoss.Exception;
 using BarberBoss.Infraestructure.DataAcess;
@@ -17,14 +18,16 @@ namespace BarberBoss.Application.UseCases.User
         private readonly IMapper _mapper;
         private readonly IUnitOfWork _unitOfWork;
         private readonly IPasswordEncrypter _passwordEncrypter;
+        private readonly ITokenGenerator _tokenGenerator;
 
-        public RegisterUserUseCase(IRegisterUserRepository repository, IMapper mapper, IUnitOfWork unitOfWork, IPasswordEncrypter passwordEncrypter, IUserReadOnlyRepository readOnlyRepository)
+        public RegisterUserUseCase(IRegisterUserRepository repository, IMapper mapper, IUnitOfWork unitOfWork, IPasswordEncrypter passwordEncrypter, IUserReadOnlyRepository readOnlyRepository, ITokenGenerator tokenGenerator)
         {
             _repository = repository;
             _mapper = mapper;
             _unitOfWork = unitOfWork;
             _passwordEncrypter = passwordEncrypter;
             _readOnlyRepository = readOnlyRepository;
+            _tokenGenerator = tokenGenerator;
         }
 
 
@@ -41,7 +44,14 @@ namespace BarberBoss.Application.UseCases.User
             await _repository.Execute(user);
             await _unitOfWork.Commit();
 
-            return _mapper.Map<ResponseUserJson>(request); ;
+            return new ResponseUserJson
+            {
+                Email = user.Email,
+                Name = user.Name,
+                Token = _tokenGenerator.GenerateToken(user)
+            };
+
+           
         }
 
 

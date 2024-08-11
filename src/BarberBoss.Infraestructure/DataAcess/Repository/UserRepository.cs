@@ -22,5 +22,10 @@ namespace BarberBoss.Infraestructure.DataAcess.Repository
         {
             await _dbContext.AddAsync(user);
         }
+
+        public async Task<Domain.Entities.User?> GetByEmail(string email)
+        {
+            return await _dbContext.User.AsNoTracking().FirstOrDefaultAsync(user => user.Email.Equals(email));
+        }
     }
 }

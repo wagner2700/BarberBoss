@@ -2,9 +2,7 @@ using BarberBoss.Api.Filters;
 using BarberBoss.Api.Midleware;
 using BarberBoss.Application;
 using BarberBoss.Infraestructure;
-using BarberBoss.Infraestructure.DataAcess;
 using BarberBoss.Infraestructure.Migrations;
-using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 

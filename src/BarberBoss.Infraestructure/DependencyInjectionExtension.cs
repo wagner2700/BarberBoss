@@ -1,5 +1,6 @@
 ﻿using BarberBoss.Domain.Bills;
 using BarberBoss.Domain.Security;
+using BarberBoss.Domain.Token;
 using BarberBoss.Domain.Users;
 using BarberBoss.Infraestructure.DataAcess;
 using BarberBoss.Infraestructure.DataAcess.Repository;
@@ -17,6 +18,7 @@ namespace BarberBoss.Infraestructure
         {
             AddDbContext(service , configuration);
             AddRepository(service);
+            AddToken(service, configuration);
 
 
         }
@@ -31,9 +33,18 @@ namespace BarberBoss.Infraestructure
             service.AddScoped<IUserReadOnlyRepository, UserRepository>();
             service.AddScoped<IRegisterUserRepository, UserRepository>();
             service.AddScoped<IPasswordEncrypter, BcryptPasswordEncryptor>();
+   
         
 
 
+        }
+
+        private static void AddToken( IServiceCollection service, IConfiguration configuration)
+        {
+            var expiresInMinutes = configuration.GetValue<uint>("Settings:jwt:ExpiresMinutes");
+            var singningKey = configuration.GetValue<string>("Settings:jwt:SigninKey");
+
+            service.AddScoped<ITokenGenerator>(config => new TokenGenerator(expiresInMinutes, singningKey!));
         }
 
         private static void AddDbContext(IServiceCollection service , IConfiguration configuration )

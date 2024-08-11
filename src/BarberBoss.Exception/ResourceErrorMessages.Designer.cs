@@ -97,6 +97,15 @@ namespace BarberBoss.Exception {
         }
         
         /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Email e/ou senha inválido.
+        /// </summary>
+        public static string LoginNaoAutorizado {
+            get {
+                return ResourceManager.GetString("LoginNaoAutorizado", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a Nome não pode ser vazio.
         /// </summary>
         public static string NomeVazio {

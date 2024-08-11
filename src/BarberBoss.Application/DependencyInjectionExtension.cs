@@ -31,6 +31,7 @@ namespace BarberBoss.Application
             service.AddScoped<IUpdateBillUseCase, UpdateBillUseCase>();
             service.AddScoped<IBillGetByIdUseCase, BillGetByIdUseCase>();
             service.AddScoped<IRegisterUserUseCase, RegisterUserUseCase>();
+            service.AddScoped<IDoLoginUseCase , DoLoginUseCase>();
         
 
 

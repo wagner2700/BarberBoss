@@ -12,10 +12,10 @@ namespace BarberBoss.Api.Controllers
         [HttpPost]
         [ProducesResponseType(typeof(ResponseUserJson) , StatusCodes.Status201Created)]
         [ProducesResponseType(typeof(ResponseErrorJson) , StatusCodes.Status400BadRequest)]
-        public  async Task RegisterUser([FromBody] UserRequestJson request ,[FromServices] IRegisterUserUseCase useCase)
+        public  async Task<IActionResult> RegisterUser([FromBody] UserRequestJson request ,[FromServices] IRegisterUserUseCase useCase)
         {
-            await useCase.Execute(request);
-            Ok(request);
+            var response = await useCase.Execute(request);
+            return Created(string.Empty, response);
         }
     }
 }
