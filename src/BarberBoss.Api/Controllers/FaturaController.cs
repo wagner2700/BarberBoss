@@ -1,12 +1,14 @@
 ﻿using BarberBoss.Application.UseCases.Bill;
 using BarberBoss.Communication.Request;
 using BarberBoss.Communication.Response;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace BarberBoss.Api.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]
     public class FaturaController : ControllerBase
     {
 

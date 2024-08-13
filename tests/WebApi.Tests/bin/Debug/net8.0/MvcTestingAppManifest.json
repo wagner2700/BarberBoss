@@ -1,0 +1,9 @@
+{
+  "BarberBoss.Api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\wagne\\OneDrive\\Área de Trabalho\\WorkSpace\\BarberBoss\\src\\BarberBoss.Api",
+  "BarberBoss.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\wagne\\OneDrive\\Área de Trabalho\\WorkSpace\\BarberBoss\\src\\BarberBoss.Application",
+  "BarberBoss.Communication, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\wagne\\OneDrive\\Área de Trabalho\\WorkSpace\\BarberBoss\\src\\BarberBoss.Communication",
+  "BarberBoss.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\wagne\\OneDrive\\Área de Trabalho\\WorkSpace\\BarberBoss\\src\\BarberBoss.Domain",
+  "BarberBoss.Exception, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\wagne\\OneDrive\\Área de Trabalho\\WorkSpace\\BarberBoss\\src\\BarberBoss.Exception",
+  "BarberBoss.Infraestructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\wagne\\OneDrive\\Área de Trabalho\\WorkSpace\\BarberBoss\\src\\BarberBoss.Infraestructure",
+  "CommonTestsLibraries, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\wagne\\OneDrive\\Área de Trabalho\\WorkSpace\\BarberBoss\\tests\\CommoTestsLibraries"
+}

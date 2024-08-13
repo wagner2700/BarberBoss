@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CommonTestsLibraries")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+120a92e192d791a8e7b11ae7647e46ed5d57576f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a275badcc6e992587b410b79096519b904041f2e")]
 [assembly: System.Reflection.AssemblyProductAttribute("CommonTestsLibraries")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CommonTestsLibraries")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

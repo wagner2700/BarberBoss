@@ -40,6 +40,7 @@ namespace BarberBoss.Application.UseCases.User
             var passwordEncrpter = _passwordEncrypter.Encrypt(request.Password);
 
             user.Password = passwordEncrpter;
+            user.UserIdentifier = Guid.NewGuid();
 
             await _repository.Execute(user);
             await _unitOfWork.Commit();

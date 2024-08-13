@@ -3,6 +3,11 @@ using BarberBoss.Api.Midleware;
 using BarberBoss.Application;
 using BarberBoss.Infraestructure;
 using BarberBoss.Infraestructure.Migrations;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.Extensions.Configuration;
+using Microsoft.IdentityModel.Tokens;
+using Microsoft.OpenApi.Models;
+using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -11,7 +16,36 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
+builder.Services.AddSwaggerGen(config =>
+{
+    config.AddSecurityDefinition("Bearer" , new OpenApiSecurityScheme
+    {
+        Name = "Authorization",
+        Description = @"Para inserer Bearer Exemplo : Bearer [espaço] 123455abcdf",
+        In = Microsoft.OpenApi.Models.ParameterLocation.Header,
+        Scheme = "Bearer",
+        Type = Microsoft.OpenApi.Models.SecuritySchemeType.ApiKey
+    });
+
+
+    config.AddSecurityRequirement(new OpenApiSecurityRequirement
+    {
+        {
+            new OpenApiSecurityScheme
+            {
+                Reference = new OpenApiReference
+                {
+                    Type = ReferenceType.SecurityScheme,
+                    Id = "Bearer"
+                },
+                Scheme = "oauth2",
+                Name = "Bearer",
+                In = ParameterLocation.Header
+            },
+            new List<string>()
+        }
+    });
+});
 
 builder.Services.AddMvc(opt =>
 {
@@ -23,6 +57,22 @@ builder.Services.AddInfraestructure(builder.Configuration);
 //builder.Services.AddRepository();
 //DependencyInjectionExtension.AddApplication(builder.Services);
 
+var singninKey = builder.Configuration.GetValue<string>("Settings:jwt:SigninKey");
+
+builder.Services.AddAuthentication(config =>
+{
+    config.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+    config.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+}).AddJwtBearer(config =>
+{
+    config.TokenValidationParameters = new TokenValidationParameters
+    {
+        ValidateIssuer = false,
+        ValidateAudience = false,
+        ClockSkew = new TimeSpan(0),
+        IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(singninKey!))
+    };
+});
 
 var app = builder.Build();
 
@@ -42,6 +92,7 @@ app.UseMiddleware<CultureMidleware>();
 app.UseHttpsRedirection();
 
 app.UseAuthorization();
+app.UseAuthentication();    
 
 app.MapControllers();
 
@@ -57,5 +108,5 @@ async Task MigrateDatabase(WebApplication app)
 
 
 
-
+public partial class Program{ }
 

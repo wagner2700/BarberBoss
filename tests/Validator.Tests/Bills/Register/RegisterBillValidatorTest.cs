@@ -2,6 +2,7 @@
 using FluentAssertions;
 using BarberBoss.Application.UseCases.Bill;
 using BarberBoss.Exception;
+using BarberBoss.Application.UseCases.Bill.Validator;
 
 
 namespace Validator.Tests.Bills.Register

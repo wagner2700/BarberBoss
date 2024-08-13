@@ -19,9 +19,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BarberBoss.Exception", "src
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BarberBoss.Infraestructure", "src\BarberBoss.Infraestructure\BarberBoss.Infraestructure.csproj", "{07014ABC-F31C-47AE-9DB5-E633A8B78E5E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Validator.Tests", "tests\Validator.Tests\Validator.Tests.csproj", "{74BAF043-1B92-4CFA-9BB2-4CA28B42F37E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Validator.Tests", "tests\Validator.Tests\Validator.Tests.csproj", "{74BAF043-1B92-4CFA-9BB2-4CA28B42F37E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommonTestsLibraries", "tests\CommoTestsLibraries\CommonTestsLibraries.csproj", "{FE88098A-1E5F-4E38-BEDC-A43F0EFF5935}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CommonTestsLibraries", "tests\CommoTestsLibraries\CommonTestsLibraries.csproj", "{FE88098A-1E5F-4E38-BEDC-A43F0EFF5935}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApi.Tests", "tests\WebApi.Tests\WebApi.Tests.csproj", "{9F2D4B13-08AA-4EC2-AAF8-7CECA2FE3B0A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -61,6 +63,10 @@ Global
 		{FE88098A-1E5F-4E38-BEDC-A43F0EFF5935}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FE88098A-1E5F-4E38-BEDC-A43F0EFF5935}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FE88098A-1E5F-4E38-BEDC-A43F0EFF5935}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9F2D4B13-08AA-4EC2-AAF8-7CECA2FE3B0A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F2D4B13-08AA-4EC2-AAF8-7CECA2FE3B0A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F2D4B13-08AA-4EC2-AAF8-7CECA2FE3B0A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F2D4B13-08AA-4EC2-AAF8-7CECA2FE3B0A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -74,6 +80,7 @@ Global
 		{07014ABC-F31C-47AE-9DB5-E633A8B78E5E} = {97FE9A29-54F0-4E97-9535-D0F220A3C1A6}
 		{74BAF043-1B92-4CFA-9BB2-4CA28B42F37E} = {E798187D-8130-47CD-98F5-8753FF083BBE}
 		{FE88098A-1E5F-4E38-BEDC-A43F0EFF5935} = {E798187D-8130-47CD-98F5-8753FF083BBE}
+		{9F2D4B13-08AA-4EC2-AAF8-7CECA2FE3B0A} = {E798187D-8130-47CD-98F5-8753FF083BBE}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F82386FD-BF99-4CD7-9B94-F8C1C90512CD}
