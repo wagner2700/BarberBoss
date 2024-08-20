@@ -1,10 +1,9 @@
-﻿using Microsoft.AspNetCore.Hosting;
+﻿using BarberBoss.Infraestructure.DataAcess;
+using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc.Testing;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
+
 
 namespace CommonTestsLibraries
 {
@@ -13,7 +12,19 @@ namespace CommonTestsLibraries
 
         protected override void ConfigureWebHost(IWebHostBuilder builder)
         {
-            builder.UseEnvironment("Test");
+            builder.UseEnvironment("Test")
+                .ConfigureServices(services =>
+                {
+                    var provider = services.AddEntityFrameworkInMemoryDatabase().BuildServiceProvider();
+
+                    services.AddDbContext<BarberBossDbContext>(config =>
+                    {
+                        config.UseInMemoryDatabase("InMemoryDbForTesting");
+                        config.UseInternalServiceProvider(provider);
+                    });
+
+
+                }); 
         }
     }
 }

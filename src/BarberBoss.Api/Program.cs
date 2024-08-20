@@ -2,6 +2,7 @@ using BarberBoss.Api.Filters;
 using BarberBoss.Api.Midleware;
 using BarberBoss.Application;
 using BarberBoss.Infraestructure;
+using BarberBoss.Infraestructure.Extension;
 using BarberBoss.Infraestructure.Migrations;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.Extensions.Configuration;
@@ -85,7 +86,12 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-await MigrateDatabase(app);
+if(builder.Configuration.IsTestEnviroment() == false)
+{
+    await MigrateDatabase(app);
+}
+
+
 
 app.UseMiddleware<CultureMidleware>();
 

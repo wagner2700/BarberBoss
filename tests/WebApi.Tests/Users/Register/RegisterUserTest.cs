@@ -1,8 +1,10 @@
-﻿using CommonTestsLibraries;
+﻿using BarberBoss.Exception;
+using CommonTestsLibraries;
 using FluentAssertions;
-using Microsoft.AspNetCore.Mvc.Testing;
 using System.Net;
+using System.Net.Http;
 using System.Net.Http.Json;
+using System.Text.Json;
 
 namespace WebApi.Tests.Users.Register
 {
@@ -25,6 +27,36 @@ namespace WebApi.Tests.Users.Register
             var result = await _httpClient.PostAsJsonAsync(METHOD, request);
 
             result.StatusCode.Should().Be(HttpStatusCode.Created);
+
+            var body = await result.Content.ReadAsStreamAsync();
+
+            var response = await JsonDocument.ParseAsync(body);
+
+            response.RootElement.GetProperty("name").GetString().Should().Be(request.Name);
+            response.RootElement.GetProperty("token").GetString().Should().NotBeNullOrWhiteSpace();
+        }
+
+        [Theory]
+        [InlineData("en")]
+        [InlineData("fr")]
+        public async Task Error_Name_Empty(string language)
+        {
+            var request = RequestRegisterUserJsonBuilder.Build();
+            request.Name = string.Empty;
+
+            _httpClient.DefaultRequestHeaders.AcceptLanguage.Add(new System.Net.Http.Headers.StringWithQualityHeaderValue("en"));
+
+            var result = await _httpClient.PostAsJsonAsync(METHOD, request);
+
+            result.StatusCode.Should().Be(HttpStatusCode.BadRequest);
+            var body = await result.Content.ReadAsStreamAsync();
+
+            var response = await JsonDocument.ParseAsync(body);
+            var error = response.RootElement.GetProperty("errorMessages").EnumerateArray();
+
+            var expectedMessage = ResourceErrorMessages.ResourceManager.GetString("NomeVazio", new System.Globalization.CultureInfo("en"));
+
+            error.Should().HaveCount(1).And.Contain(error => error.GetString()!.Equals(expectedMessage));
         }
     }
 }

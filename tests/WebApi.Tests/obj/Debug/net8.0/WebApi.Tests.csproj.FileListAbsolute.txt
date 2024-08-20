@@ -451,3 +451,8 @@ C:\Users\wagne\OneDrive\Área de Trabalho\WorkSpace\BarberBoss\tests\WebApi.Test
 C:\Users\wagne\OneDrive\Área de Trabalho\WorkSpace\BarberBoss\tests\WebApi.Tests\bin\Debug\net8.0\BarberBoss.Infraestructure.pdb
 C:\Users\wagne\OneDrive\Área de Trabalho\WorkSpace\BarberBoss\tests\WebApi.Tests\bin\Debug\net8.0\pt-PT\BarberBoss.Exception.resources.dll
 C:\Users\wagne\OneDrive\Área de Trabalho\WorkSpace\BarberBoss\tests\WebApi.Tests\obj\Debug\net8.0\MvcTestingAppManifest.json
+C:\Users\wagne\OneDrive\Área de Trabalho\WorkSpace\BarberBoss\tests\WebApi.Tests\bin\Debug\net8.0\appsettings.Production.Development.json
+C:\Users\wagne\OneDrive\Área de Trabalho\WorkSpace\BarberBoss\tests\WebApi.Tests\bin\Debug\net8.0\appsettings.Production.json
+C:\Users\wagne\OneDrive\Área de Trabalho\WorkSpace\BarberBoss\tests\WebApi.Tests\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.InMemory.dll
+C:\Users\wagne\OneDrive\Área de Trabalho\WorkSpace\BarberBoss\tests\WebApi.Tests\bin\Debug\net8.0\appsettings.Test.Development.json
+C:\Users\wagne\OneDrive\Área de Trabalho\WorkSpace\BarberBoss\tests\WebApi.Tests\bin\Debug\net8.0\appsettings.Test.json

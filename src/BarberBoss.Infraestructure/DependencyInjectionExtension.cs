@@ -4,6 +4,7 @@ using BarberBoss.Domain.Token;
 using BarberBoss.Domain.Users;
 using BarberBoss.Infraestructure.DataAcess;
 using BarberBoss.Infraestructure.DataAcess.Repository;
+using BarberBoss.Infraestructure.Extension;
 using BarberBoss.Infraestructure.Security;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
@@ -49,11 +50,14 @@ namespace BarberBoss.Infraestructure
 
         private static void AddDbContext(IServiceCollection service , IConfiguration configuration )
         {
+            if(configuration.IsTestEnviroment() == false)
+            {
+                var connection = configuration.GetConnectionString("Connection");
+                var version = ServerVersion.AutoDetect(connection);
 
-            var connection = configuration.GetConnectionString("Connection");
-            var version = ServerVersion.AutoDetect(connection);
-
-            service.AddDbContext<BarberBossDbContext>(config => config.UseMySql(connection , version));
+                service.AddDbContext<BarberBossDbContext>(config => config.UseMySql(connection , version));
+            }
+            
         }
     }
 }
