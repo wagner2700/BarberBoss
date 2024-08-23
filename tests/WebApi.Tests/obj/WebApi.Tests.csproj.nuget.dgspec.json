@@ -549,6 +549,10 @@
             "Bogus": {
               "target": "Package",
               "version": "[35.6.0, )"
+            },
+            "Moq": {
+              "target": "Package",
+              "version": "[4.20.70, )"
             }
           },
           "imports": [
