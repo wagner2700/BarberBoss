@@ -1,4 +1,6 @@
 ﻿using BarberBoss.Application.UseCases.User;
+using BarberBoss.Exception;
+using BarberBoss.Infraestructure.Exceptions;
 using CommonTestsLibraries;
 using CommonTestsLibraries.Mapper;
 using CommonTestsLibraries.Repositories;
@@ -20,6 +22,25 @@ namespace UseCase.Test.Users.Register
             result.Token.Should().NotBeNullOrWhiteSpace();
         }
 
+
+        [Fact]
+        public async Task Error_Name_Empty()
+        {
+            var request = RequestRegisterUserJsonBuilder.Build();
+
+            request.Name = string.Empty;
+
+            var useCase = CreateUseCase();
+
+            var act = async () => await useCase.Execute(request);
+
+            var result = await act.Should().ThrowAsync<ErrorOnValidatorException>();
+
+            result.Where(ex => ex.GetErrors().Count == 1 && ex.GetErrors().Contains(ResourceErrorMessages.NomeVazio));
+
+        }
+
+
         private RegisterUserUseCase CreateUseCase()
         {
 
@@ -28,8 +49,9 @@ namespace UseCase.Test.Users.Register
             var registerUser = RegisterUserRepositoryBuilder.Build();
             var tokenGerator = TokenGeneratorBuilder.Build();
             var passwordEncripter = PasswordEncripterBuilder.Build();
+            var userReadOnly = new ReadOnlyBuilder().Build();
 
-            return new RegisterUserUseCase(registerUser, mapper, unitOfWork, passwordEncripter, null, tokenGerator);
+            return new RegisterUserUseCase(registerUser, mapper, unitOfWork, passwordEncripter, userReadOnly, tokenGerator);
         }
     }
 }

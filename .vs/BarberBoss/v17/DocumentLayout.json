@@ -3,12 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\wagne\\OneDrive\\\u00C1rea de Trabalho\\WorkSpace\\BarberBoss\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{FE88098A-1E5F-4E38-BEDC-A43F0EFF5935}|tests\\CommoTestsLibraries\\CommonTestsLibraries.csproj|c:\\users\\wagne\\onedrive\\\u00E1rea de trabalho\\workspace\\barberboss\\tests\\commotestslibraries\\repositories\\passwordencripterbuilder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FE88098A-1E5F-4E38-BEDC-A43F0EFF5935}|tests\\CommoTestsLibraries\\CommonTestsLibraries.csproj|solutionrelative:tests\\commotestslibraries\\repositories\\passwordencripterbuilder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{00F89BC9-5B3E-4002-93B5-45C32A9AE204}|tests\\UseCase.Test\\UseCase.Test.csproj|c:\\users\\wagne\\onedrive\\\u00E1rea de trabalho\\workspace\\barberboss\\tests\\usecase.test\\users\\register\\registeruserusecasetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{00F89BC9-5B3E-4002-93B5-45C32A9AE204}|tests\\UseCase.Test\\UseCase.Test.csproj|solutionrelative:tests\\usecase.test\\users\\register\\registeruserusecasetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8C90C62-0B28-41AE-B81F-3F6F3A587E86}|src\\BarberBoss.Application\\BarberBoss.Application.csproj|c:\\users\\wagne\\onedrive\\\u00E1rea de trabalho\\workspace\\barberboss\\src\\barberboss.application\\usecases\\user\\validator\\uservalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D8C90C62-0B28-41AE-B81F-3F6F3A587E86}|src\\BarberBoss.Application\\BarberBoss.Application.csproj|solutionrelative:src\\barberboss.application\\usecases\\user\\validator\\uservalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FE88098A-1E5F-4E38-BEDC-A43F0EFF5935}|tests\\CommoTestsLibraries\\CommonTestsLibraries.csproj|c:\\users\\wagne\\onedrive\\\u00E1rea de trabalho\\workspace\\barberboss\\tests\\commotestslibraries\\repositories\\readonlybuilder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FE88098A-1E5F-4E38-BEDC-A43F0EFF5935}|tests\\CommoTestsLibraries\\CommonTestsLibraries.csproj|solutionrelative:tests\\commotestslibraries\\repositories\\readonlybuilder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FE88098A-1E5F-4E38-BEDC-A43F0EFF5935}|tests\\CommoTestsLibraries\\CommonTestsLibraries.csproj|c:\\users\\wagne\\onedrive\\\u00E1rea de trabalho\\workspace\\barberboss\\tests\\commotestslibraries\\repositories\\passwordencripterbuilder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FE88098A-1E5F-4E38-BEDC-A43F0EFF5935}|tests\\CommoTestsLibraries\\CommonTestsLibraries.csproj|solutionrelative:tests\\commotestslibraries\\repositories\\passwordencripterbuilder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{07014ABC-F31C-47AE-9DB5-E633A8B78E5E}|src\\BarberBoss.Infraestructure\\BarberBoss.Infraestructure.csproj|c:\\users\\wagne\\onedrive\\\u00E1rea de trabalho\\workspace\\barberboss\\src\\barberboss.infraestructure\\security\\tokengenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -21,10 +29,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{74BAF043-1B92-4CFA-9BB2-4CA28B42F37E}|tests\\Validator.Tests\\Validator.Tests.csproj|c:\\users\\wagne\\onedrive\\\u00E1rea de trabalho\\workspace\\barberboss\\tests\\validator.tests\\users\\registeruservalidatortest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{74BAF043-1B92-4CFA-9BB2-4CA28B42F37E}|tests\\Validator.Tests\\Validator.Tests.csproj|solutionrelative:tests\\validator.tests\\users\\registeruservalidatortest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D8C90C62-0B28-41AE-B81F-3F6F3A587E86}|src\\BarberBoss.Application\\BarberBoss.Application.csproj|c:\\users\\wagne\\onedrive\\\u00E1rea de trabalho\\workspace\\barberboss\\src\\barberboss.application\\usecases\\user\\validator\\uservalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D8C90C62-0B28-41AE-B81F-3F6F3A587E86}|src\\BarberBoss.Application\\BarberBoss.Application.csproj|solutionrelative:src\\barberboss.application\\usecases\\user\\validator\\uservalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FE88098A-1E5F-4E38-BEDC-A43F0EFF5935}|tests\\CommoTestsLibraries\\CommonTestsLibraries.csproj|c:\\users\\wagne\\onedrive\\\u00E1rea de trabalho\\workspace\\barberboss\\tests\\commotestslibraries\\billrequestbuilder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -74,24 +78,35 @@
       "DocumentGroups": [
         {
           "DockedWidth": 1257,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
+              "Title": "ReadOnlyBuilder.cs",
+              "DocumentMoniker": "C:\\Users\\wagne\\OneDrive\\\u00C1rea de Trabalho\\WorkSpace\\BarberBoss\\tests\\CommoTestsLibraries\\Repositories\\ReadOnlyBuilder.cs",
+              "RelativeDocumentMoniker": "tests\\CommoTestsLibraries\\Repositories\\ReadOnlyBuilder.cs",
+              "ToolTip": "C:\\Users\\wagne\\OneDrive\\\u00C1rea de Trabalho\\WorkSpace\\BarberBoss\\tests\\CommoTestsLibraries\\Repositories\\ReadOnlyBuilder.cs",
+              "RelativeToolTip": "tests\\CommoTestsLibraries\\Repositories\\ReadOnlyBuilder.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-24T03:08:55.269Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "PasswordEncripterBuilder.cs",
               "DocumentMoniker": "C:\\Users\\wagne\\OneDrive\\\u00C1rea de Trabalho\\WorkSpace\\BarberBoss\\tests\\CommoTestsLibraries\\Repositories\\PasswordEncripterBuilder.cs",
               "RelativeDocumentMoniker": "tests\\CommoTestsLibraries\\Repositories\\PasswordEncripterBuilder.cs",
               "ToolTip": "C:\\Users\\wagne\\OneDrive\\\u00C1rea de Trabalho\\WorkSpace\\BarberBoss\\tests\\CommoTestsLibraries\\Repositories\\PasswordEncripterBuilder.cs",
               "RelativeToolTip": "tests\\CommoTestsLibraries\\Repositories\\PasswordEncripterBuilder.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAApAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAABrAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-23T01:31:22.151Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-23T01:31:22.151Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "TokenGenerator.cs",
               "DocumentMoniker": "C:\\Users\\wagne\\OneDrive\\\u00C1rea de Trabalho\\WorkSpace\\BarberBoss\\src\\BarberBoss.Infraestructure\\Security\\TokenGenerator.cs",
               "RelativeDocumentMoniker": "src\\BarberBoss.Infraestructure\\Security\\TokenGenerator.cs",
@@ -99,12 +114,11 @@
               "RelativeToolTip": "src\\BarberBoss.Infraestructure\\Security\\TokenGenerator.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAxAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-23T01:24:27.765Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-23T01:24:27.765Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "MapperBuilder.cs",
               "DocumentMoniker": "C:\\Users\\wagne\\OneDrive\\\u00C1rea de Trabalho\\WorkSpace\\BarberBoss\\tests\\CommoTestsLibraries\\Mapper\\MapperBuilder.cs",
               "RelativeDocumentMoniker": "tests\\CommoTestsLibraries\\Mapper\\MapperBuilder.cs",
@@ -112,38 +126,37 @@
               "RelativeToolTip": "tests\\CommoTestsLibraries\\Mapper\\MapperBuilder.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAARAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-23T00:10:19.993Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-23T00:10:19.993Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "RegisterUserUseCaseTest.cs",
               "DocumentMoniker": "C:\\Users\\wagne\\OneDrive\\\u00C1rea de Trabalho\\WorkSpace\\BarberBoss\\tests\\UseCase.Test\\Users\\Register\\RegisterUserUseCaseTest.cs",
               "RelativeDocumentMoniker": "tests\\UseCase.Test\\Users\\Register\\RegisterUserUseCaseTest.cs",
               "ToolTip": "C:\\Users\\wagne\\OneDrive\\\u00C1rea de Trabalho\\WorkSpace\\BarberBoss\\tests\\UseCase.Test\\Users\\Register\\RegisterUserUseCaseTest.cs",
               "RelativeToolTip": "tests\\UseCase.Test\\Users\\Register\\RegisterUserUseCaseTest.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABwAAAA9AAAA",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAAABwAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-20T23:51:55.038Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 1,
               "Title": "UserValidator.cs",
               "DocumentMoniker": "C:\\Users\\wagne\\OneDrive\\\u00C1rea de Trabalho\\WorkSpace\\BarberBoss\\src\\BarberBoss.Application\\UseCases\\User\\Validator\\UserValidator.cs",
               "RelativeDocumentMoniker": "src\\BarberBoss.Application\\UseCases\\User\\Validator\\UserValidator.cs",
               "ToolTip": "C:\\Users\\wagne\\OneDrive\\\u00C1rea de Trabalho\\WorkSpace\\BarberBoss\\src\\BarberBoss.Application\\UseCases\\User\\Validator\\UserValidator.cs",
               "RelativeToolTip": "src\\BarberBoss.Application\\UseCases\\User\\Validator\\UserValidator.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAsAAABfAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAoAAABTAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-20T23:34:08.155Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "RegisterUserValidatorTest.cs",
               "DocumentMoniker": "C:\\Users\\wagne\\OneDrive\\\u00C1rea de Trabalho\\WorkSpace\\BarberBoss\\tests\\Validator.Tests\\Users\\RegisterUserValidatorTest.cs",
               "RelativeDocumentMoniker": "tests\\Validator.Tests\\Users\\RegisterUserValidatorTest.cs",
@@ -151,12 +164,11 @@
               "RelativeToolTip": "tests\\Validator.Tests\\Users\\RegisterUserValidatorTest.cs",
               "ViewState": "AQIAAAMAAAAAAAAAAIBJwBEAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-20T23:33:26.23Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-20T23:33:26.23Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "BillRequestBuilder.cs",
               "DocumentMoniker": "C:\\Users\\wagne\\OneDrive\\\u00C1rea de Trabalho\\WorkSpace\\BarberBoss\\tests\\CommoTestsLibraries\\BillRequestBuilder.cs",
               "RelativeDocumentMoniker": "tests\\CommoTestsLibraries\\BillRequestBuilder.cs",
@@ -164,12 +176,11 @@
               "RelativeToolTip": "tests\\CommoTestsLibraries\\BillRequestBuilder.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAyAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-20T23:12:17.953Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-20T23:12:17.953Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "RegisterBillValidatorTest.cs",
               "DocumentMoniker": "C:\\Users\\wagne\\OneDrive\\\u00C1rea de Trabalho\\WorkSpace\\BarberBoss\\tests\\Validator.Tests\\Bills\\Register\\RegisterBillValidatorTest.cs",
               "RelativeDocumentMoniker": "tests\\Validator.Tests\\Bills\\Register\\RegisterBillValidatorTest.cs",
@@ -177,24 +188,22 @@
               "RelativeToolTip": "tests\\Validator.Tests\\Bills\\Register\\RegisterBillValidatorTest.cs",
               "ViewState": "AQIAAAMAAAAAAAAAAIBJwB8AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-20T23:12:12.395Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-20T23:12:12.395Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "ResourceErrorMessages.en-EN.resx",
               "DocumentMoniker": "C:\\Users\\wagne\\OneDrive\\\u00C1rea de Trabalho\\WorkSpace\\BarberBoss\\src\\BarberBoss.Exception\\ResourceErrorMessages.en-EN.resx",
               "RelativeDocumentMoniker": "src\\BarberBoss.Exception\\ResourceErrorMessages.en-EN.resx",
               "ToolTip": "C:\\Users\\wagne\\OneDrive\\\u00C1rea de Trabalho\\WorkSpace\\BarberBoss\\src\\BarberBoss.Exception\\ResourceErrorMessages.en-EN.resx",
               "RelativeToolTip": "src\\BarberBoss.Exception\\ResourceErrorMessages.en-EN.resx",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
-              "WhenOpened": "2024-08-20T22:30:25.832Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-20T22:30:25.832Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\wagne\\OneDrive\\\u00C1rea de Trabalho\\WorkSpace\\BarberBoss\\src\\BarberBoss.Api\\Program.cs",
               "RelativeDocumentMoniker": "src\\BarberBoss.Api\\Program.cs",
@@ -202,12 +211,11 @@
               "RelativeToolTip": "src\\BarberBoss.Api\\Program.cs",
               "ViewState": "AQIAAD8AAAAAAAAAAIBZwFgAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-19T23:09:54.231Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-19T23:09:54.231Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "BarberBossDbContext.cs",
               "DocumentMoniker": "C:\\Users\\wagne\\OneDrive\\\u00C1rea de Trabalho\\WorkSpace\\BarberBoss\\src\\BarberBoss.Infraestructure\\DataAcess\\BarberBossDbContext.cs",
               "RelativeDocumentMoniker": "src\\BarberBoss.Infraestructure\\DataAcess\\BarberBossDbContext.cs",
@@ -215,24 +223,22 @@
               "RelativeToolTip": "src\\BarberBoss.Infraestructure\\DataAcess\\BarberBossDbContext.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-19T22:47:50.031Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-19T22:47:50.031Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "ResourceErrorMessages.pt-PT.resx",
               "DocumentMoniker": "C:\\Users\\wagne\\OneDrive\\\u00C1rea de Trabalho\\WorkSpace\\BarberBoss\\src\\BarberBoss.Exception\\ResourceErrorMessages.pt-PT.resx",
               "RelativeDocumentMoniker": "src\\BarberBoss.Exception\\ResourceErrorMessages.pt-PT.resx",
               "ToolTip": "C:\\Users\\wagne\\OneDrive\\\u00C1rea de Trabalho\\WorkSpace\\BarberBoss\\src\\BarberBoss.Exception\\ResourceErrorMessages.pt-PT.resx",
               "RelativeToolTip": "src\\BarberBoss.Exception\\ResourceErrorMessages.pt-PT.resx",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
-              "WhenOpened": "2024-08-20T22:30:28.815Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-20T22:30:28.815Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "WebApi.Tests.csproj",
               "DocumentMoniker": "C:\\Users\\wagne\\OneDrive\\\u00C1rea de Trabalho\\WorkSpace\\BarberBoss\\tests\\WebApi.Tests\\WebApi.Tests.csproj",
               "RelativeDocumentMoniker": "tests\\WebApi.Tests\\WebApi.Tests.csproj",
@@ -240,12 +246,11 @@
               "RelativeToolTip": "tests\\WebApi.Tests\\WebApi.Tests.csproj",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-08-20T22:30:59.726Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-20T22:30:59.726Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "CultureInlineDataTest.cs",
               "DocumentMoniker": "C:\\Users\\wagne\\OneDrive\\\u00C1rea de Trabalho\\WorkSpace\\BarberBoss\\tests\\WebApi.Tests\\InLineData\\CultureInlineDataTest.cs",
               "RelativeDocumentMoniker": "tests\\WebApi.Tests\\InLineData\\CultureInlineDataTest.cs",
@@ -253,12 +258,11 @@
               "RelativeToolTip": "tests\\WebApi.Tests\\InLineData\\CultureInlineDataTest.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-20T22:31:26.493Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-20T22:31:26.493Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "appsettings.Test.Development.json",
               "DocumentMoniker": "C:\\Users\\wagne\\OneDrive\\\u00C1rea de Trabalho\\WorkSpace\\BarberBoss\\src\\BarberBoss.Api\\appsettings.Test.Development.json",
               "RelativeDocumentMoniker": "src\\BarberBoss.Api\\appsettings.Test.Development.json",
@@ -266,12 +270,11 @@
               "RelativeToolTip": "src\\BarberBoss.Api\\appsettings.Test.Development.json",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-08-16T00:31:54.093Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-16T00:31:54.093Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "appsettings.Production.json",
               "DocumentMoniker": "C:\\Users\\wagne\\OneDrive\\\u00C1rea de Trabalho\\WorkSpace\\BarberBoss\\src\\BarberBoss.Api\\appsettings.Production.json",
               "RelativeDocumentMoniker": "src\\BarberBoss.Api\\appsettings.Production.json",
@@ -279,8 +282,7 @@
               "RelativeToolTip": "src\\BarberBoss.Api\\appsettings.Production.json",
               "ViewState": "AQIAAAAAAAAAAAAAAIBJwAIAAAB3AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-08-16T00:32:28.813Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-16T00:32:28.813Z"
             }
           ]
         }
