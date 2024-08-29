@@ -456,3 +456,5 @@ C:\Users\wagne\OneDrive\Área de Trabalho\WorkSpace\BarberBoss\tests\WebApi.Test
 C:\Users\wagne\OneDrive\Área de Trabalho\WorkSpace\BarberBoss\tests\WebApi.Tests\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.InMemory.dll
 C:\Users\wagne\OneDrive\Área de Trabalho\WorkSpace\BarberBoss\tests\WebApi.Tests\bin\Debug\net8.0\appsettings.Test.Development.json
 C:\Users\wagne\OneDrive\Área de Trabalho\WorkSpace\BarberBoss\tests\WebApi.Tests\bin\Debug\net8.0\appsettings.Test.json
+C:\Users\wagne\OneDrive\Área de Trabalho\WorkSpace\BarberBoss\tests\WebApi.Tests\bin\Debug\net8.0\Castle.Core.dll
+C:\Users\wagne\OneDrive\Área de Trabalho\WorkSpace\BarberBoss\tests\WebApi.Tests\bin\Debug\net8.0\Moq.dll

@@ -1,4 +1,5 @@
-﻿using BarberBoss.Domain.Users;
+﻿using BarberBoss.Domain.Entities;
+using BarberBoss.Domain.Users;
 using Moq;
 
 namespace CommonTestsLibraries.Repositories
@@ -11,6 +12,14 @@ namespace CommonTestsLibraries.Repositories
         public ReadOnlyBuilder()
         {
             _repository = new Mock<IUserReadOnlyRepository>();
+
+            
+        }
+
+        public ReadOnlyBuilder GetUserByEmail(User user)
+        {
+            _repository.Setup(repo => repo.GetByEmail(user.Email)).ReturnsAsync(user);
+            return this;
         }
 
         public IUserReadOnlyRepository Build() => _repository.Object;
