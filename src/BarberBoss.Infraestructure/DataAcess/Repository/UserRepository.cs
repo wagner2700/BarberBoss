@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace BarberBoss.Infraestructure.DataAcess.Repository
 {
-    public class UserRepository : IRegisterUserRepository , IUserReadOnlyRepository
+    public class UserRepository : IWriteRegisterUserRepository , IUserReadOnlyRepository
     {
         private readonly BarberBossDbContext _dbContext;
 

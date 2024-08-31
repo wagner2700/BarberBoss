@@ -1,15 +1,18 @@
-﻿using BarberBoss.Domain.Users;
+﻿using BarberBoss.Domain.Entities;
+using BarberBoss.Domain.Users;
 using Moq;
 
 namespace CommonTestsLibraries.Repositories
 {
     public class RegisterUserRepositoryBuilder
     {
-        public static IRegisterUserRepository Build()
+        public static IWriteRegisterUserRepository Build()
         {
-            var mock = new Mock<IRegisterUserRepository>();
+            var mock = new Mock<IWriteRegisterUserRepository>();
 
             return mock.Object;
         }
+
+      
     }
 }

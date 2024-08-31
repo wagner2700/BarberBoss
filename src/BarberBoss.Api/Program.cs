@@ -1,6 +1,8 @@
 using BarberBoss.Api.Filters;
 using BarberBoss.Api.Midleware;
+using BarberBoss.Api.Token;
 using BarberBoss.Application;
+using BarberBoss.Domain.Users;
 using BarberBoss.Infraestructure;
 using BarberBoss.Infraestructure.Extension;
 using BarberBoss.Infraestructure.Migrations;
@@ -55,9 +57,12 @@ builder.Services.AddMvc(opt =>
 
 builder.Services.AddApplication();
 builder.Services.AddInfraestructure(builder.Configuration);
-//builder.Services.AddRepository();
-//DependencyInjectionExtension.AddApplication(builder.Services);
 
+//DependencyInjectionExtension.AddApplication(builder.Services);
+builder.Services.AddScoped<ITokenProvider, HttpContextValue>();
+
+
+builder.Services.AddHttpContextAccessor();
 var singninKey = builder.Configuration.GetValue<string>("Settings:jwt:SigninKey");
 
 builder.Services.AddAuthentication(config =>

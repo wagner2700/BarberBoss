@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BarberBoss.Domain")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a29cdfb9cebd1f82b88bc5039ff55ee41906de23")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b271001f040bc7e9366573367de5aa0e6a5fe8d7")]
 [assembly: System.Reflection.AssemblyProductAttribute("BarberBoss.Domain")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BarberBoss.Domain")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

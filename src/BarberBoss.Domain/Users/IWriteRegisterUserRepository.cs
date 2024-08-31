@@ -2,7 +2,7 @@
 
 namespace BarberBoss.Domain.Users
 {
-    public interface IRegisterUserRepository
+    public interface IWriteRegisterUserRepository
     {
         Task Execute(User user);
     }

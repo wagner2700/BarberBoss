@@ -13,14 +13,18 @@ namespace BarberBoss.Application.UseCases.User
 {
     public class RegisterUserUseCase : IRegisterUserUseCase
     {
-        private readonly IRegisterUserRepository _repository;
+        private readonly IWriteRegisterUserRepository _repository;
         private readonly IUserReadOnlyRepository _readOnlyRepository;
         private readonly IMapper _mapper;
         private readonly IUnitOfWork _unitOfWork;
         private readonly IPasswordEncrypter _passwordEncrypter;
         private readonly ITokenGenerator _tokenGenerator;
 
-        public RegisterUserUseCase(IRegisterUserRepository repository, IMapper mapper, IUnitOfWork unitOfWork, IPasswordEncrypter passwordEncrypter, IUserReadOnlyRepository readOnlyRepository, ITokenGenerator tokenGenerator)
+        public RegisterUserUseCase(IWriteRegisterUserRepository repository, 
+            IMapper mapper, IUnitOfWork unitOfWork, 
+            IPasswordEncrypter passwordEncrypter,
+            IUserReadOnlyRepository readOnlyRepository,
+            ITokenGenerator tokenGenerator)
         {
             _repository = repository;
             _mapper = mapper;
@@ -41,7 +45,6 @@ namespace BarberBoss.Application.UseCases.User
 
             user.Password = passwordEncrpter;
             user.UserIdentifier = Guid.NewGuid();
-
             await _repository.Execute(user);
             await _unitOfWork.Commit();
 
@@ -50,9 +53,7 @@ namespace BarberBoss.Application.UseCases.User
                 Email = user.Email,
                 Name = user.Name,
                 Token = _tokenGenerator.GenerateToken(user)
-            };
-
-           
+            };     
         }
 
 

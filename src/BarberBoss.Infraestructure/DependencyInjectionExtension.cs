@@ -6,6 +6,7 @@ using BarberBoss.Infraestructure.DataAcess;
 using BarberBoss.Infraestructure.DataAcess.Repository;
 using BarberBoss.Infraestructure.Extension;
 using BarberBoss.Infraestructure.Security;
+using BarberBoss.Infraestructure.Services;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -20,8 +21,7 @@ namespace BarberBoss.Infraestructure
             AddDbContext(service , configuration);
             AddRepository(service);
             AddToken(service, configuration);
-
-
+            service.AddScoped<ILoggedUser , LoggedUser>();
         }
 
 
@@ -32,7 +32,7 @@ namespace BarberBoss.Infraestructure
             service.AddScoped<IBillReadOnlyRepository, RegistrarFaturaRepository>();
             service.AddScoped<IBillUpdateOnlyRepository, RegistrarFaturaRepository>();
             service.AddScoped<IUserReadOnlyRepository, UserRepository>();
-            service.AddScoped<IRegisterUserRepository, UserRepository>();
+            service.AddScoped<IWriteRegisterUserRepository, UserRepository>();
             service.AddScoped<IPasswordEncrypter, BcryptPasswordEncryptor>();
    
         

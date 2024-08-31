@@ -4,6 +4,7 @@ using BarberBoss.Communication.Request;
 using BarberBoss.Communication.Response;
 using BarberBoss.Domain.Bills;
 using BarberBoss.Domain.Entities;
+using BarberBoss.Domain.Users;
 using BarberBoss.Infraestructure.DataAcess;
 using BarberBoss.Infraestructure.Exceptions;
 
@@ -14,20 +15,23 @@ namespace BarberBoss.Application.UseCases.Bill
         private readonly IBillWriteOnlyRepository _repositoryWriteOnly;
         private readonly IMapper _mapper;
         private readonly IUnitOfWork _unitOfWork;
+        private readonly ILoggedUser _loggedUser;
 
 
-        public RegisterBillUseCase(IBillWriteOnlyRepository repositoryWriteOnly, IMapper mapper, IUnitOfWork unitOfWork)
+        public RegisterBillUseCase(IBillWriteOnlyRepository repositoryWriteOnly, IMapper mapper, IUnitOfWork unitOfWork, ILoggedUser loggedUser)
         {
             _repositoryWriteOnly = repositoryWriteOnly;
             _mapper = mapper;
             _unitOfWork = unitOfWork;
+            _loggedUser = loggedUser;
 
         }
         public async Task<ResponseFaturaJson> Registrar(RequestBillJson request)
         {
             Validate(request);
             var fatura = _mapper.Map<Fatura>(request);
-
+            var loggedUser = await _loggedUser.Get();
+            fatura.UserId = loggedUser!.Id;
             await _repositoryWriteOnly.RegisterBill(fatura);
             await _unitOfWork.Commit();
             return _mapper.Map<ResponseFaturaJson>(fatura);

@@ -14,15 +14,15 @@ namespace BarberBoss.Infraestructure.DataAcess.Repository
             _context = context;
         }
 
-        public async Task<bool> Delete(long id)
+        public async Task Delete( User user, long id)
         {
-            var result = await _context.Fatura.FirstOrDefaultAsync(fatura => fatura.Id == id);  
-            if (result is null)
+            var result = await _context.Fatura.FirstOrDefaultAsync(fatura => fatura.Id == id && fatura.UserId == user.Id);  
+            if(result != null)
             {
-                return false;
+                _context.Fatura.Remove(result);
             }
-            _context.Fatura.Remove(result);
-            return true;
+            
+            
         }
 
         async Task<Fatura?> IBillReadOnlyRepository.GetById(long id)
@@ -30,9 +30,9 @@ namespace BarberBoss.Infraestructure.DataAcess.Repository
             return await _context.Fatura.AsNoTracking().FirstOrDefaultAsync(f => f.Id == id);
         }
 
-        async Task<Fatura?> IBillUpdateOnlyRepository.GetById(long id)
+        async Task<Fatura?> IBillUpdateOnlyRepository.GetById(User user,long id)
         {
-            return await _context.Fatura.FirstOrDefaultAsync(f => f.Id == id);
+            return await _context.Fatura.FirstOrDefaultAsync(f => f.Id == id && f.UserId == user.Id);
 
              
         }

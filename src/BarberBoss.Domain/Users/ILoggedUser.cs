@@ -4,6 +4,6 @@ namespace BarberBoss.Domain.Users
 {
     public interface ILoggedUser
     {
-        Task<User> Get();
+        Task<User?> Get();
     }
 }

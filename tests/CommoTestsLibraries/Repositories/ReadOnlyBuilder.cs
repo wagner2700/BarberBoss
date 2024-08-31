@@ -22,6 +22,7 @@ namespace CommonTestsLibraries.Repositories
             return this;
         }
 
+
         public IUserReadOnlyRepository Build() => _repository.Object;
     }
 }

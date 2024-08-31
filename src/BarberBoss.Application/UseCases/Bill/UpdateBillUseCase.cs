@@ -3,6 +3,7 @@ using BarberBoss.Application.UseCases.Bill.Validator;
 using BarberBoss.Communication.Request;
 using BarberBoss.Domain.Bills;
 using BarberBoss.Domain.Entities;
+using BarberBoss.Domain.Users;
 using BarberBoss.Exception;
 using BarberBoss.Exception.Exceptions;
 using BarberBoss.Infraestructure.DataAcess;
@@ -15,22 +16,25 @@ namespace BarberBoss.Application.UseCases.Bill
         private readonly IBillUpdateOnlyRepository _repository;
         private readonly IUnitOfWork _unitOfWork;
         private readonly IMapper _mapper;
+        private readonly ILoggedUser _loggedUser;
 
-        public UpdateBillUseCase(IBillUpdateOnlyRepository repository, IUnitOfWork unitOfWork, IMapper mapper)
+        public UpdateBillUseCase(IBillUpdateOnlyRepository repository, IUnitOfWork unitOfWork, IMapper mapper , ILoggedUser loggedUser)
         {
             _repository = repository;
             _unitOfWork = unitOfWork;
             _mapper = mapper;
+            _loggedUser = loggedUser;
         }
 
 
         public async Task Update(long id, RequestBillJson request)
         {
             Validate(request);
+            var loggedUser = await _loggedUser.Get();
+            var bill = await _repository.GetById(loggedUser, id);
+           
 
-            var bill = await _repository.GetById(id);
-
-            if(bill == null)
+            if (bill == null )
             {
                 throw new RegisterNotFoundEception(ResourceErrorMessages.RegistroNaoEncontrado);
             }

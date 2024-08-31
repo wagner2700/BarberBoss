@@ -1,6 +1,7 @@
 ﻿using BarberBoss.Application.AutoMapper;
 using BarberBoss.Application.UseCases.Bill;
 using BarberBoss.Application.UseCases.User;
+using BarberBoss.Domain.Users;
 using BarberBoss.Infraestructure.DataAcess;
 using Microsoft.Extensions.DependencyInjection;
 
@@ -31,6 +32,7 @@ namespace BarberBoss.Application
             service.AddScoped<IUpdateBillUseCase, UpdateBillUseCase>();
             service.AddScoped<IBillGetByIdUseCase, BillGetByIdUseCase>();
             service.AddScoped<IRegisterUserUseCase, RegisterUserUseCase>();
+         
             service.AddScoped<IDoLoginUseCase , DoLoginUseCase>();
         
 
