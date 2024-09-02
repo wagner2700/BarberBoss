@@ -29,7 +29,7 @@ namespace BarberBoss.Application.UseCases.Bill
         public async Task<ResponseFaturaJson> Registrar(RequestBillJson request)
         {
             Validate(request);
-            var fatura = _mapper.Map<Fatura>(request);
+            var fatura = _mapper.Map<Domain.Entities.Bill>(request);
             var loggedUser = await _loggedUser.Get();
             fatura.UserId = loggedUser!.Id;
             await _repositoryWriteOnly.RegisterBill(fatura);

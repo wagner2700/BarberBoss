@@ -1,7 +1,9 @@
 ﻿using BarberBoss.Application.UseCases.User;
 using BarberBoss.Communication.Request;
 using BarberBoss.Communication.Response;
+using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;
+using System.Net;
 
 namespace BarberBoss.Api.Controllers
 {
@@ -17,5 +19,17 @@ namespace BarberBoss.Api.Controllers
             var response = await useCase.Execute(request);
             return Created(string.Empty, response);
         }
+
+        [HttpGet]
+        [ProducesResponseType(typeof(ResponseUserProfileJson), StatusCodes.Status200OK)]
+        public async Task<IActionResult> GetProfile([FromServices] IGetUserProfileUseCase useCase)
+        {
+            var response = await useCase.Execute();
+
+            return Ok(response);
+        }
     }
+
+
+    
 }

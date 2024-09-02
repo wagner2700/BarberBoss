@@ -5,13 +5,17 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc.Testing;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
+using WebApi.Tests.Resources;
 
 
 namespace CommonTestsLibraries
 {
     public class CustomWebApplicatioFactory : WebApplicationFactory<Program>
     {
-        private User _user; 
+
+        public UserIdentityManager User_Team_Member {  get; set; }
+        public UserIdentityManager User_Admin {  get; set; }
+        public BillIdentityManager bill {  get; set; }
 
         protected override void ConfigureWebHost(IWebHostBuilder builder)
         {
@@ -26,12 +30,9 @@ namespace CommonTestsLibraries
                         config.UseInternalServiceProvider(provider);
                     });
                     var scope = services.BuildServiceProvider().CreateScope();
-                    var dbContext = scope.ServiceProvider.GetRequiredService<DbContext>();
+                    var dbContext = scope.ServiceProvider.GetRequiredService<BarberBossDbContext>();
                 }); 
         }
-
-        public string GetEmail() =>  _user.Email;
-        public string GetPassword() => _user.Password;
 
         private void StartDatabase(BarberBossDbContext dbContext)
         {

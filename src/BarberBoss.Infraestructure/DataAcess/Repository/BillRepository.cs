@@ -25,25 +25,25 @@ namespace BarberBoss.Infraestructure.DataAcess.Repository
             
         }
 
-        async Task<Fatura?> IBillReadOnlyRepository.GetById(long id)
+        async Task<Bill?> IBillReadOnlyRepository.GetById(long id)
         {
             return await _context.Fatura.AsNoTracking().FirstOrDefaultAsync(f => f.Id == id);
         }
 
-        async Task<Fatura?> IBillUpdateOnlyRepository.GetById(User user,long id)
+        async Task<Bill?> IBillUpdateOnlyRepository.GetById(User user,long id)
         {
             return await _context.Fatura.FirstOrDefaultAsync(f => f.Id == id && f.UserId == user.Id);
 
              
         }
 
-        public async Task RegisterBill(Fatura fatura)
+        public async Task RegisterBill(Bill fatura)
         {
             await _context.Fatura.AddAsync(fatura);
             
         }
 
-        public void Update(Fatura fatura)
+        public void Update(Bill fatura)
         {
             _context.Fatura.Update(fatura);
         }

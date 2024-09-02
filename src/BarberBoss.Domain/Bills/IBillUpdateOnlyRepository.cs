@@ -4,7 +4,7 @@ namespace BarberBoss.Domain.Bills
 {
     public interface IBillUpdateOnlyRepository
     {
-        void Update(Fatura fatura);
-        Task<Fatura?> GetById(User user ,long id);
+        void Update(Bill fatura);
+        Task<Bill?> GetById(User user ,long id);
     }
 }

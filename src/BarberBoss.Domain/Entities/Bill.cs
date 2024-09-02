@@ -2,7 +2,7 @@
 
 namespace BarberBoss.Domain.Entities
 {
-    public class Fatura
+    public class Bill
     {
         public long Id { get; set; }    
         public DateTime Data { get; set; }
