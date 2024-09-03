@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BarberBoss.Exception")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cfc2ab8285f7bc200e5d01e1225d5a9cd461042e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8a4b86520a6b277a4497c111da580e48371958ee")]
 [assembly: System.Reflection.AssemblyProductAttribute("BarberBoss.Exception")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BarberBoss.Exception")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

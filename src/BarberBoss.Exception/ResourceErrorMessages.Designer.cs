@@ -88,6 +88,15 @@ namespace BarberBoss.Exception {
         }
         
         /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Email ja cadastrado.
+        /// </summary>
+        public static string EmailJaCadastrado {
+            get {
+                return ResourceManager.GetString("EmailJaCadastrado", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a Email não pode ser vazio.
         /// </summary>
         public static string EmailVazio {
@@ -129,6 +138,15 @@ namespace BarberBoss.Exception {
         public static string RegistroNaoEncontrado {
             get {
                 return ResourceManager.GetString("RegistroNaoEncontrado", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Senha deve ser igual senha atual.
+        /// </summary>
+        public static string SenhaDeveSerIgual {
+            get {
+                return ResourceManager.GetString("SenhaDeveSerIgual", resourceCulture);
             }
         }
         

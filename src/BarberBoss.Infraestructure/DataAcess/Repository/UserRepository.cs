@@ -27,5 +27,15 @@ namespace BarberBoss.Infraestructure.DataAcess.Repository
         {
             return await _dbContext.User.AsNoTracking().FirstOrDefaultAsync(user => user.Email.Equals(email));
         }
+
+        public async Task<User?> GetById(long id)
+        {
+            return await _dbContext.User.FirstOrDefaultAsync(user => user.Id == id);
+        }
+
+        public void Update(User user)
+        {
+             _dbContext.User.Update(user);
+        }
     }
 }

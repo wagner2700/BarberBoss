@@ -33,14 +33,9 @@ namespace BarberBoss.Application
             service.AddScoped<IBillGetByIdUseCase, BillGetByIdUseCase>();
             service.AddScoped<IRegisterUserUseCase, RegisterUserUseCase>();
             service.AddScoped<IGetUserProfileUseCase, GetUserProfileUseCase>();
-     
-
-
+            service.AddScoped<IUpdateUserUseCase, UpdateUserUseCase>();
+            service.AddScoped<IChangePasswordUseCase, ChangePasswordUseCase>();
             service.AddScoped<IDoLoginUseCase , DoLoginUseCase>();
-        
-
-
-
         }
     }
 }

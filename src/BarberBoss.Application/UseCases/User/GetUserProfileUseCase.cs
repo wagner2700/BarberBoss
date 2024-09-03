@@ -18,7 +18,7 @@ namespace BarberBoss.Application.UseCases.User
 
         public async Task<ResponseUserProfileJson> Execute()
         {
-            var user = _loggedUser.Get();
+            var user = await _loggedUser.Get();
 
             return _mapper.Map<ResponseUserProfileJson>(user);
 

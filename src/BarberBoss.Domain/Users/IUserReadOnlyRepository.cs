@@ -6,5 +6,7 @@ namespace BarberBoss.Domain.Users
     {
         Task<bool> EmailExist(string email);
         Task<User?> GetByEmail(string email);
+
+        Task<User?> GetById(long id);
     }
 }
