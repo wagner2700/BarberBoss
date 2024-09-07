@@ -162,6 +162,9 @@
   <data name="SenhaVazia" xml:space="preserve">
     <value>Senha não pode ser vazia</value>
   </data>
+  <data name="TagNaoSuportada" xml:space="preserve">
+    <value>Tag não suportada</value>
+  </data>
   <data name="ValorMaiorQueZero" xml:space="preserve">
     <value>Valor deve ser maior que zero</value>
   </data>

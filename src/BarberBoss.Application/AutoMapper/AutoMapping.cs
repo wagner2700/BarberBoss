@@ -15,9 +15,13 @@ namespace BarberBoss.Application.AutoMapper
 
         private void RequestToEntity()
         {
-            CreateMap<RequestBillJson, Bill>();
+            CreateMap<RequestBillJson, Bill>()
+                .ForMember(bill => bill.Tags , config => config.MapFrom(source => source.Tags.Distinct()));
             CreateMap<UserRequestJson, User>()
                 .ForMember(user => user.Password , config => config.Ignore());
+            CreateMap<Domain.Enums.Tag, Tag>()
+                .ForMember(bill =>bill.valorTag , config => config.MapFrom(source => source));
+            
         }
 
         private void EntityToRequest()

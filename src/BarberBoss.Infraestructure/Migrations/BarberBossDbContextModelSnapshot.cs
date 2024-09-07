@@ -22,7 +22,7 @@ namespace BarberBoss.Infraestructure.Migrations
 
             MySqlModelBuilderExtensions.AutoIncrementColumns(modelBuilder);
 
-            modelBuilder.Entity("BarberBoss.Domain.Entities.Fatura", b =>
+            modelBuilder.Entity("BarberBoss.Domain.Entities.Bill", b =>
                 {
                     b.Property<long>("Id")
                         .ValueGeneratedOnAdd()
@@ -51,6 +51,27 @@ namespace BarberBoss.Infraestructure.Migrations
                     b.HasIndex("UserId");
 
                     b.ToTable("Fatura");
+                });
+
+            modelBuilder.Entity("BarberBoss.Domain.Entities.Tag", b =>
+                {
+                    b.Property<int>("id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("id"));
+
+                    b.Property<long>("BillId")
+                        .HasColumnType("bigint");
+
+                    b.Property<int>("valorTag")
+                        .HasColumnType("int");
+
+                    b.HasKey("id");
+
+                    b.HasIndex("BillId");
+
+                    b.ToTable("Tags", (string)null);
                 });
 
             modelBuilder.Entity("BarberBoss.Domain.Entities.User", b =>
@@ -84,7 +105,7 @@ namespace BarberBoss.Infraestructure.Migrations
                     b.ToTable("User");
                 });
 
-            modelBuilder.Entity("BarberBoss.Domain.Entities.Fatura", b =>
+            modelBuilder.Entity("BarberBoss.Domain.Entities.Bill", b =>
                 {
                     b.HasOne("BarberBoss.Domain.Entities.User", "User")
                         .WithMany()
@@ -93,6 +114,22 @@ namespace BarberBoss.Infraestructure.Migrations
                         .IsRequired();
 
                     b.Navigation("User");
+                });
+
+            modelBuilder.Entity("BarberBoss.Domain.Entities.Tag", b =>
+                {
+                    b.HasOne("BarberBoss.Domain.Entities.Bill", "Bill")
+                        .WithMany("Tags")
+                        .HasForeignKey("BillId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Bill");
+                });
+
+            modelBuilder.Entity("BarberBoss.Domain.Entities.Bill", b =>
+                {
+                    b.Navigation("Tags");
                 });
 #pragma warning restore 612, 618
         }

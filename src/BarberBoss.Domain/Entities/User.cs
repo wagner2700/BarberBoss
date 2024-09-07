@@ -13,5 +13,6 @@ namespace BarberBoss.Domain.Entities
         public string Email { get; set; } = string.Empty;
         public Guid UserIdentifier { get; set; }
         public Roles Role { get; set; } =  Roles.TEAM_MEMBER;
+       
     }
 }

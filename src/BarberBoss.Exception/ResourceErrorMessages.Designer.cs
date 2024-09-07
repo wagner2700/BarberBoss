@@ -196,6 +196,15 @@ namespace BarberBoss.Exception {
         }
         
         /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Tag não suportada.
+        /// </summary>
+        public static string TagNaoSuportada {
+            get {
+                return ResourceManager.GetString("TagNaoSuportada", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a Valor deve ser maior que zero.
         /// </summary>
         public static string ValorMaiorQueZero {
