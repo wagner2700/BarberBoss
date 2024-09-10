@@ -17,7 +17,7 @@ namespace BarberBoss.Application.UseCases.Bill
             _mapper = mapper;
         }
 
-        public async Task<ResponseFaturaJson> GetById(long id)
+        public async Task<ResponseBillJson> GetById(long id)
         {
             var result = await _onlyRepository.GetById(id);
             
@@ -25,7 +25,7 @@ namespace BarberBoss.Application.UseCases.Bill
             {
                 throw new RegisterNotFoundEception(ResourceErrorMessages.RegistroNaoEncontrado);
             }
-            return _mapper.Map<ResponseFaturaJson>(result);
+            return _mapper.Map<ResponseBillJson>(result);
         }
     }
 }

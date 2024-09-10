@@ -132,3 +132,10 @@ C:\Users\wagne\OneDrive\Área de Trabalho\WorkSpace\BarberBoss\src\BarberBoss.Ap
 C:\Users\wagne\OneDrive\Área de Trabalho\WorkSpace\BarberBoss\src\BarberBoss.Api\bin\Debug\net8.0\appsettings.Production.json
 C:\Users\wagne\OneDrive\Área de Trabalho\WorkSpace\BarberBoss\src\BarberBoss.Api\bin\Debug\net8.0\appsettings.Test.Development.json
 C:\Users\wagne\OneDrive\Área de Trabalho\WorkSpace\BarberBoss\src\BarberBoss.Api\bin\Debug\net8.0\appsettings.Test.json
+C:\Users\wagne\OneDrive\Área de Trabalho\WorkSpace\BarberBoss\src\BarberBoss.Api\bin\Debug\net8.0\ClosedXML.dll
+C:\Users\wagne\OneDrive\Área de Trabalho\WorkSpace\BarberBoss\src\BarberBoss.Api\bin\Debug\net8.0\DocumentFormat.OpenXml.dll
+C:\Users\wagne\OneDrive\Área de Trabalho\WorkSpace\BarberBoss\src\BarberBoss.Api\bin\Debug\net8.0\ExcelNumberFormat.dll
+C:\Users\wagne\OneDrive\Área de Trabalho\WorkSpace\BarberBoss\src\BarberBoss.Api\bin\Debug\net8.0\Irony.dll
+C:\Users\wagne\OneDrive\Área de Trabalho\WorkSpace\BarberBoss\src\BarberBoss.Api\bin\Debug\net8.0\SixLabors.Fonts.dll
+C:\Users\wagne\OneDrive\Área de Trabalho\WorkSpace\BarberBoss\src\BarberBoss.Api\bin\Debug\net8.0\System.IO.Packaging.dll
+C:\Users\wagne\OneDrive\Área de Trabalho\WorkSpace\BarberBoss\src\BarberBoss.Api\bin\Debug\net8.0\XLParser.dll

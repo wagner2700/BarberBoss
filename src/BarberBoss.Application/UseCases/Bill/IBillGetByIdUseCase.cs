@@ -5,6 +5,6 @@ namespace BarberBoss.Application.UseCases.Bill
 {
     public interface IBillGetByIdUseCase
     {
-        Task<ResponseFaturaJson> GetById(long id);
+        Task<ResponseBillJson> GetById(long id);
     }
 }

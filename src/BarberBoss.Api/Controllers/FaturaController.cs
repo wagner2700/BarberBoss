@@ -13,7 +13,7 @@ namespace BarberBoss.Api.Controllers
     {
 
         [HttpPost]
-        [ProducesResponseType(typeof(ResponseFaturaJson), StatusCodes.Status201Created)]
+        [ProducesResponseType(typeof(ResponseBillJson), StatusCodes.Status201Created)]
         [ProducesResponseType(typeof(ResponseErrorJson), StatusCodes.Status400BadRequest)]
         public async Task<IActionResult>   RegistrarFatura([FromBody]RequestBillJson request , [FromServices]IRegisterBillUseCase useCase)
         {
@@ -24,7 +24,7 @@ namespace BarberBoss.Api.Controllers
 
         [HttpGet]
         [Route("id")]
-        [ProducesResponseType(typeof(ResponseFaturaJson), StatusCodes.Status200OK)]
+        [ProducesResponseType(typeof(ResponseBillJson), StatusCodes.Status200OK)]
         [ProducesResponseType(typeof(ResponseErrorJson), StatusCodes.Status404NotFound)]
         public async Task<IActionResult> GetBillById(long id , [FromServices] IBillGetByIdUseCase useCase)
         {
@@ -44,7 +44,7 @@ namespace BarberBoss.Api.Controllers
 
         [HttpPut]
         [Route("id")]
-        [ProducesResponseType(typeof(ResponseFaturaJson), StatusCodes.Status200OK)]
+        [ProducesResponseType(typeof(ResponseBillJson), StatusCodes.Status200OK)]
         [ProducesResponseType(typeof(ResponseErrorJson), StatusCodes.Status404NotFound)]
         [ProducesResponseType(typeof(ResponseErrorJson), StatusCodes.Status400BadRequest)]
         public async Task<IActionResult> Update(long id, [FromBody] RequestBillJson request , [FromServices] IUpdateBillUseCase useCase)

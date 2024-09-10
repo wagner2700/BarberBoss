@@ -27,7 +27,9 @@ namespace BarberBoss.Infraestructure.DataAcess.Repository
 
         async Task<Bill?> IBillReadOnlyRepository.GetById(long id)
         {
-            return await _context.Fatura.AsNoTracking().FirstOrDefaultAsync(f => f.Id == id);
+            return await GetFullBill()
+                .AsNoTracking()
+                .FirstOrDefaultAsync(f => f.Id == id);
         }
 
         async Task<Bill?> IBillUpdateOnlyRepository.GetById(User user,long id)
@@ -46,6 +48,27 @@ namespace BarberBoss.Infraestructure.DataAcess.Repository
         public void Update(Bill fatura)
         {
             _context.Fatura.Update(fatura);
+        }
+
+        private Microsoft.EntityFrameworkCore.Query.IIncludableQueryable<Bill, ICollection<Tag>> GetFullBill()
+        {
+            return _context.Fatura
+                 .Include(bill => bill.Tags);
+        }
+
+        public async Task<List<Bill>> GetByMonth(DateOnly date)
+        {
+            var startDate = new DateTime(year: date.Year , month: date.Month, day: 1 ).Date;
+            var daysInMonth = DateTime.DaysInMonth(year: date.Year , month: date.Month);
+            var endDate = new DateTime(year: date.Year , month: date.Month, day: daysInMonth , hour: 23, minute: 59 , second: 59);
+            
+
+           return await _context.Fatura
+                .AsNoTracking()
+                .Where(bill => bill.Data >= startDate && bill.Data <= endDate)
+                .OrderBy(bill => bill.Data)
+                .ThenBy(bill => bill.Descricao)
+                .ToListAsync();
         }
     }
 }

@@ -6,6 +6,6 @@ namespace BarberBoss.Application.UseCases.Bill
     public interface IRegisterBillUseCase
     {
 
-        Task<ResponseFaturaJson> Registrar(RequestBillJson request);
+        Task<ResponseBillJson> Registrar(RequestBillJson request);
     }
 }

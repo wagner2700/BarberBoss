@@ -38,9 +38,10 @@ namespace BarberBoss.Application.UseCases.Bill
             {
                 throw new RegisterNotFoundEception(ResourceErrorMessages.RegistroNaoEncontrado);
             }
-
+            bill.Tags.Clear();
             _mapper.Map(request , bill);
-    
+            
+
             _repository.Update(bill);
             await _unitOfWork.Commit();
         }

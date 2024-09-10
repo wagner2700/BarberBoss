@@ -10,3 +10,5 @@ C:\Users\wagne\OneDrive\Área de Trabalho\WorkSpace\BarberBoss\src\BarberBoss.Do
 C:\Users\wagne\OneDrive\Área de Trabalho\WorkSpace\BarberBoss\src\BarberBoss.Domain\obj\Debug\net8.0\refint\BarberBoss.Domain.dll
 C:\Users\wagne\OneDrive\Área de Trabalho\WorkSpace\BarberBoss\src\BarberBoss.Domain\obj\Debug\net8.0\BarberBoss.Domain.pdb
 C:\Users\wagne\OneDrive\Área de Trabalho\WorkSpace\BarberBoss\src\BarberBoss.Domain\obj\Debug\net8.0\ref\BarberBoss.Domain.dll
+C:\Users\wagne\OneDrive\Área de Trabalho\WorkSpace\BarberBoss\src\BarberBoss.Domain\obj\Debug\net8.0\BarberBoss.Domain.Reports.ResourceReportMessages.resources
+C:\Users\wagne\OneDrive\Área de Trabalho\WorkSpace\BarberBoss\src\BarberBoss.Domain\obj\Debug\net8.0\BarberBoss.Domain.csproj.GenerateResource.cache

@@ -26,7 +26,8 @@ namespace BarberBoss.Application.AutoMapper
 
         private void EntityToRequest()
         {
-            CreateMap<Bill, ResponseFaturaJson>();
+            CreateMap<Bill, ResponseBillJson>()
+                .ForMember(dest => dest.Tags , config =>  config.MapFrom(source => source.Tags.Select(tag => tag.valorTag)));
             CreateMap<User, UserRequestJson>();
             CreateMap<User, ResponseUserProfileJson>();
             

@@ -26,7 +26,7 @@ namespace BarberBoss.Application.UseCases.Bill
             _loggedUser = loggedUser;
 
         }
-        public async Task<ResponseFaturaJson> Registrar(RequestBillJson request)
+        public async Task<ResponseBillJson> Registrar(RequestBillJson request)
         {
             Validate(request);
             var fatura = _mapper.Map<Domain.Entities.Bill>(request);
@@ -34,7 +34,7 @@ namespace BarberBoss.Application.UseCases.Bill
             fatura.UserId = loggedUser!.Id;
             await _repositoryWriteOnly.RegisterBill(fatura);
             await _unitOfWork.Commit();
-            return _mapper.Map<ResponseFaturaJson>(fatura);
+            return _mapper.Map<ResponseBillJson>(fatura);
 
         }
 

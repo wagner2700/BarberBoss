@@ -1,5 +1,6 @@
 ﻿using BarberBoss.Application.AutoMapper;
 using BarberBoss.Application.UseCases.Bill;
+using BarberBoss.Application.UseCases.Reports;
 using BarberBoss.Application.UseCases.User;
 using BarberBoss.Domain.Users;
 using BarberBoss.Infraestructure.DataAcess;
@@ -36,6 +37,9 @@ namespace BarberBoss.Application
             service.AddScoped<IUpdateUserUseCase, UpdateUserUseCase>();
             service.AddScoped<IChangePasswordUseCase, ChangePasswordUseCase>();
             service.AddScoped<IDoLoginUseCase , DoLoginUseCase>();
+            service.AddScoped< IGenerateBillReportUseCase ,GenerateBillReportUseCase >();
+            service.AddScoped<IGenerateExpenseReportPdfUseCase, GenerateExpenseReportPdfUseCase>();
+        
         }
     }
 }
