@@ -123,8 +123,14 @@
   <data name="DESCRIÇÃO" xml:space="preserve">
     <value>Descrição</value>
   </data>
+  <data name="DESPESAPARA" xml:space="preserve">
+    <value>Despesa para</value>
+  </data>
   <data name="TIPOPAGAMENTO" xml:space="preserve">
     <value>Tipo de Pagamento</value>
+  </data>
+  <data name="TOTALGASTOEM" xml:space="preserve">
+    <value>Total gasto em {0}</value>
   </data>
   <data name="VALOR" xml:space="preserve">
     <value>Valor</value>

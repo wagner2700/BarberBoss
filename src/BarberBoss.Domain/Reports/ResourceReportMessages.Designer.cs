@@ -79,11 +79,29 @@ namespace BarberBoss.Domain.Reports {
         }
         
         /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Despesa para.
+        /// </summary>
+        public static string DESPESAPARA {
+            get {
+                return ResourceManager.GetString("DESPESAPARA", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a Tipo de Pagamento.
         /// </summary>
         public static string TIPOPAGAMENTO {
             get {
                 return ResourceManager.GetString("TIPOPAGAMENTO", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Total gasto em {0}.
+        /// </summary>
+        public static string TOTALGASTOEM {
+            get {
+                return ResourceManager.GetString("TOTALGASTOEM", resourceCulture);
             }
         }
         

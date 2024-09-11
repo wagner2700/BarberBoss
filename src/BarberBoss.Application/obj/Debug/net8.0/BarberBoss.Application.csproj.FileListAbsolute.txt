@@ -19,3 +19,4 @@ C:\Users\wagne\OneDrive\Área de Trabalho\WorkSpace\BarberBoss\src\BarberBoss.Ap
 C:\Users\wagne\OneDrive\Área de Trabalho\WorkSpace\BarberBoss\src\BarberBoss.Application\obj\Debug\net8.0\refint\BarberBoss.Application.dll
 C:\Users\wagne\OneDrive\Área de Trabalho\WorkSpace\BarberBoss\src\BarberBoss.Application\obj\Debug\net8.0\BarberBoss.Application.pdb
 C:\Users\wagne\OneDrive\Área de Trabalho\WorkSpace\BarberBoss\src\BarberBoss.Application\obj\Debug\net8.0\ref\BarberBoss.Application.dll
+C:\Users\wagne\OneDrive\Área de Trabalho\WorkSpace\BarberBoss\src\BarberBoss.Application\bin\Debug\net8.0\Logo\ProfilePhoto.png
