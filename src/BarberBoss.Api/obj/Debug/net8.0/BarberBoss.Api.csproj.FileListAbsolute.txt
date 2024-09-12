@@ -153,3 +153,4 @@ C:\Users\wagne\OneDrive\Área de Trabalho\WorkSpace\BarberBoss\src\BarberBoss.Ap
 C:\Users\wagne\OneDrive\Área de Trabalho\WorkSpace\BarberBoss\src\BarberBoss.Api\bin\Debug\net8.0\de\MigraDoc.RtfRendering.resources.dll
 C:\Users\wagne\OneDrive\Área de Trabalho\WorkSpace\BarberBoss\src\BarberBoss.Api\bin\Debug\net8.0\de\PdfSharp.Charting.resources.dll
 C:\Users\wagne\OneDrive\Área de Trabalho\WorkSpace\BarberBoss\src\BarberBoss.Api\bin\Debug\net8.0\de\PdfSharp.resources.dll
+C:\Users\wagne\OneDrive\Área de Trabalho\WorkSpace\BarberBoss\src\BarberBoss.Api\bin\Debug\net8.0\Logo\ProfilePhoto.png

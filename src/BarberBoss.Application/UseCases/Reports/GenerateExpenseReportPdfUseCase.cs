@@ -47,15 +47,26 @@ namespace BarberBoss.Application.UseCases.Reports
             CreateHeaderWithProfilePhotoAndName(page);
             var totalBills = Math.Round(bilss.Sum(bill => bill.Valor), 2);
 
-            foreach(var bill in bilss)
+            CreateTotalSpentSection(page, date, totalBills);
+
+            foreach (var bill in bilss)
             {
                 var table = CreateBillTable(page);
+
+                var row = table.AddRow();
+                row.Height = 25;
+
+                row.Cells[0].AddParagraph(bill.Descricao);
+                row.Cells[0].Format.Font = new Font { Name = FontHelper.RALEWAY_BLACK, Size = 4 , Color = ColorsHelper.BLACK };
+                row.Cells[0].Shading.Color = ColorsHelper.RED_LIGHT;
+                row.Cells[0].VerticalAlignment = VerticalAlignment.Center;
+                row.Cells[0].MergeRight = 2;
+
+                row.Cells[3].AddParagraph(ResourceReportMessages.VALOR);
+                row.Cells[3].Format.Font = new Font { Name = FontHelper.RALEWAY_BLACK, Size = 4, Color = ColorsHelper.WHITE };
+                row.Cells[3].Shading.Color = ColorsHelper.RED_DARK;
+                row.Cells[3].VerticalAlignment = VerticalAlignment.Center;
             }
-
-            CreateTotalSpentSection(page , date, totalBills);
-
-
-
 
 
 
